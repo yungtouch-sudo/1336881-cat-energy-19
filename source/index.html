@@ -5,8 +5,93 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+      <img class="page-header__logo-icon" src="#" width="" height="" alt="Кэт энерджи" />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="main-preview">
+        <h1 class="main-preview__title">Функциональное питание для котов</h1>
+        <h2 class="main-preview__text">Занялся собой? Займись котом!</h2>
+        <a class="main-preview__link" href="#">Подобрать программу</a>
+        <div>
+          <span class="main-preview__image"></span>
+        </div>
+      </section>
+      <section class="product-info">
+        <ul class="product-info__list product-preview">
+          <li class="product-preview__item">
+            <span class="product-preview__title">Похудение</span>
+            <p class="product-preview__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="product-preview__link" href="#">Каталог Slim</a>
+          </li>
+          <li class="product-preview__item">
+            <span class="product-preview__title">Набор массы</span>
+            <p class="product-preview__text">Заработать авторитет среди дворовых котов и даже собак?Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="product-preview__link" href="#">Каталог pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="product-faq ">
+        <h2 class="product-faq__title">Как это работает</h2>
+        <ul class="product-faq__list">
+          <li class="product-advantages">
+            <p class="product-advantages__text">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+          <li class="product-advantages">
+            <p class="product-advantages__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+          <li class="product-advantages">
+            <p class="product-advantages__text">
+              Замените один-два приема обычной еды на наше функциональное питание.
+            </p>
+          </li>
+          <li class="product-advantages">
+            <p class="product-advantages__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#"></a>
+      <ul class="page-footer__social social">
+        <li class="social__items">
+          <a class="social__link" href="#">vk</a>
+        </li>
+        <li class="social__items">
+          <a class="social__link" href="#">inst</a>
+        </li>
+        <li class="social__items">
+          <a class="social__link" href="#">fb</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <img class="copyright__image" src="#" width="" height="" alt="html academy" />
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
