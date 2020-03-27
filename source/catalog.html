@@ -17,7 +17,7 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__item--current" href="#">Каталог продукции</a>
+              <a class="site-list__link site-list__link--current" href="#">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">Подбор программы</a>
@@ -27,7 +27,7 @@
       </nav>
     </header>
     <section class="main-catalog">
-      <h2 class="catalog-title">Каталог продукции</h2>
+      <h2 class="product-title">Каталог продукции</h2>
       <div class="catalog-item">
         <ul class="catalog-list">
           <li class="catalog-list__about catalog-card">
@@ -36,26 +36,26 @@
             </p>
             <table class="catalog-card__stats">
               <tr>
-                <td class="catalog-card__volume">
+                <td class="catalog-card__property">
                   Объем
                 </td>
-                <td class="catalog-card__weight">
+                <td class="catalog-card__value">
                   500 г
                 </td>
               </tr>
               <tr>
-                <td class="catalog-card__taste">
+                <td class="catalog-card__property">
                   Вкус
                 </td>
-                <td class="catalog-card__choice">
+                <td class="catalog-card__value">
                   Курица
                 </td>
               </tr>
               <tr>
-                <td class="catalog-card__price">
+                <td class="catalog-card__property">
                   Цена
                 </td>
-                <td class="catalog-card__amount">
+                <td class="catalog-card__value">
                   700 р.
                 </td>
               </tr>
@@ -265,7 +265,7 @@
       </div>
     </section>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#"></a>
+      <img class="page-footer__logo" src="" width="" height="" alt="Логотип Кэт энерджи"></img>
       <ul class="page-footer__social social">
         <li class="social__items">
           <a class="social__link" href="#">vk</a>
@@ -278,8 +278,12 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <img class="copyright__image" src="#" width="" height="" alt="html academy" />
-        <a class="copyright__link" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#">
+          <p class="copyright__text">
+            HTML Academy
+          </p>
+          <img class="copyright__image" src="#" width="" height="" alt="Логотип HTML academy"/>
+        </a>
       </div>
     </footer>
   </body>
