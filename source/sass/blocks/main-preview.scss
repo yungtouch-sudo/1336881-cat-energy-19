@@ -1,0 +1,32 @@
+.main-preview {}
+
+.main-preview__background {
+  background: #000000 url("../img/index-background-mobile@1x.jpg") no-repeat;
+  width: 320px;
+  height: 305px;
+}
+
+.main-preview__title {
+  font-family: Oswald;
+  font-size: 36px;
+  line-height: 1;
+  color: black;
+}
+
+.main-preview__link {
+  display: inline-block;
+  padding-left: 73px;
+  padding-right: 74px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Oswald;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  background-color: #68b738;
+  color: white;
+  margin-top: 100px;
+  margin-left: 20px;
+}

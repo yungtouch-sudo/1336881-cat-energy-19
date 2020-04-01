@@ -1,0 +1,15 @@
+@import "general/normalize";
+@import "general/fonts";
+//@import "general/variables";
+//@import "general/mixins";
+@import "general/global";
+
+/* Blocks */
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-preview.scss";
+@import "blocks/product-info.scss";
+@import "blocks/product-list.scss";

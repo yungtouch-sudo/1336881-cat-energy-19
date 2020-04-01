@@ -1,0 +1,13 @@
+.main-nav{
+  position: relative;
+  &::before{
+    content: "";
+    background: url("../img/icon-mobile-menu.svg");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 19px;
+    position: absolute;
+    top:-43px;
+    left:250px;
+  }
+}

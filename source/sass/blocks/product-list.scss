@@ -1,0 +1,42 @@
+.product-list{
+  list-style: none;
+  width: 280px;
+height: 266px;
+background-color: #f2f2f2;
+}
+.product-list__title{
+  font-family: Oswald;
+font-size: 24px;
+line-height: 1.54;
+text-align: left;
+text-transform: uppercase;
+color: #111111;
+text-align: center;
+}
+.product-list__text{
+  font-family: Arial;
+font-size: 14px;
+line-height: 1.29;
+text-align: left;
+border-bottom: solid red 1px;
+}
+
+.product-list__link{
+  position: relative;
+  text-decoration: none;
+  font-family: Oswald;
+font-size: 16px;
+line-height: 1;
+text-align: left;
+text-transform: uppercase;
+color: #111111;
+&::before{
+  content: "";
+  background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  width: 25px;
+height: 12px;
+  position: absolute;
+  top:7px;
+  left:100px;
+}
+}
