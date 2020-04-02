@@ -1,4 +1,5 @@
 .product-list {
+  position: relative;
   list-style: none;
   width: 280px;
   height: 266px;
@@ -13,17 +14,14 @@
   text-transform: uppercase;
   font-weight: 400;
   color: #111111;
-  text-align: center;
+  text-align: left;
+  padding-left: 65px;
 }
 
 .product-list__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.29;
-  letter-spacing: normal;
   text-align: left;
   color: #444444;
 }
@@ -47,4 +45,50 @@
     top: 7px;
     left: 100px;
   }
+}
+
+.product-list--1::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.product-list--1::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-slim.svg") no-repeat;
+  width: 35px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.product-list--2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.product-list--2::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon-cat-pro.svg") no-repeat;
+  width: 67px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }

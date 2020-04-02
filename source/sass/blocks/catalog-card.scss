@@ -1,12 +1,7 @@
 .catalog-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
   text-transform: uppercase;
   color: #111111;
 }
@@ -14,11 +9,7 @@
 .catalog-card__property {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   text-align: left;
   color: #444444;
 }
@@ -26,11 +17,7 @@
 .catalog-card__value {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   text-align: right;
   color: #444444;
 }
@@ -38,17 +25,16 @@
 .catalog-card__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: normal;
   line-height: 1.25;
-  letter-spacing: normal;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
-  padding: 13px 108px 13px 111px;
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   margin-top: 20px;
   display: inline-block;
 }
