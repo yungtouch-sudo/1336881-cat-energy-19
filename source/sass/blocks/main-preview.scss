@@ -7,18 +7,17 @@
 }
 
 .main-preview__title {
-  font-family: Oswald;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
+  font-weight: 400;
+  text-align: center;
   line-height: 1;
-  color: black;
+  color: #ffffff;
 }
 
 .main-preview__link {
   display: inline-block;
-  padding-left: 73px;
-  padding-right: 74px;
-  padding-top: 14px;
-  padding-bottom: 11px;
+  padding: 14px 74px 11px 73px;
   text-transform: uppercase;
   text-decoration: none;
   font-family: Oswald;
@@ -26,7 +25,17 @@
   line-height: 1.29;
   text-align: center;
   background-color: #68b738;
-  color: white;
+  color: #ffffff;
   margin-top: 100px;
   margin-left: 20px;
+}
+
+.main-preview__text {
+  font-family: Oswald;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -27,13 +28,16 @@
       </nav>
     </header>
     <section class="main-catalog">
-      <h2 class="great-title page-title">Каталог продукции</h2>
+      <h2 class="main-catalog__title great-title">Каталог продукции</h2>
       <div class="catalog-item">
         <ul class="catalog-list">
           <li class="catalog-list__about catalog-card">
+            <div>
+            <img src="img/chicken-small-mobile@1x.jpg" width="140" height="144"/>
             <p class="catalog-card__title">
               Cat Energy PRO 500 г
             </p>
+          </div>
             <table class="catalog-card__stats">
               <tr>
                 <td class="catalog-card__property">
@@ -257,6 +261,7 @@
         </ul>
       </div>
       <div class="catalog-full">
+        <span class="catalog-full__decoration"></span>
         <h3 class="catalog-full__title">Показать еще 100500 товаров</h3>
         <p class="catalog-full__text">
           На самом деле вкусов гораздо больше!
