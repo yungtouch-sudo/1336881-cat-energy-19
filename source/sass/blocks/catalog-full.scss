@@ -1,0 +1,44 @@
+.catalog-full {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  position: relative;
+}
+
+.catalog-full--decoration::before {
+  content: "";
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.catalog-full__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.catalog-full__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #444444;
+}
+
+.catalog-full__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #444444;
+  background-color: #f2f2f2;
+  padding: 13px 94px 13px 97px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+@import "general/normalize";
+@import "general/fonts";
+//@import "general/variables";
+//@import "general/mixins";
+@import "general/global";
+
+/* Blocks */
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+@import "blocks/site-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-preview.scss";
+@import "blocks/product-info.scss";
+@import "blocks/product-list.scss";
+@import "blocks/product-advantages.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/great-title.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/catalog-card.scss";
+@import "blocks/catalog-full.scss";
