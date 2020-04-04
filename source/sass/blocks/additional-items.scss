@@ -1,0 +1,43 @@
+.additional-items {
+  border-bottom: 1px solid blue;
+}
+
+.additional-items__unit {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: left;
+  color: #222222;
+}
+
+.additional-items__property {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+  color: #444444;
+}
+
+.additional-items__value {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  text-align: right;
+  color: #444444;
+}
+
+.additional-items__link {
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  width: 280px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}

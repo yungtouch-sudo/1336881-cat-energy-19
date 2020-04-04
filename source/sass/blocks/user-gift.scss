@@ -1,0 +1,28 @@
+.user-gift {
+  background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  width: 280px;
+  height: 289px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-gift.svg") no-repeat;
+    width: 56px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.user-gift__text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
+}
+
+.user-form__fieldset {
+  border: 0;
+}

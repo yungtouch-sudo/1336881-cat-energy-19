@@ -1,0 +1,53 @@
+.user-form__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.user-form__control {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+
+  &::placeholder {
+    opacity: 1;
+    color: #444444;
+  }
+}
+
+.user-form__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  text-align: left;
+  color: #111111;
+}
+
+.user-form__btn {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 280px;
+  border: none;
+}
+
+.user-form__star {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  color: #444444;
+}
