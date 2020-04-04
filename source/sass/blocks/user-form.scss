@@ -13,7 +13,16 @@
   line-height: 1.13;
   text-align: left;
   text-transform: uppercase;
-  color: #444444;
+  color: #222222;
+  opacity: 1;
+}
+
+.user-form__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .user-form__title {

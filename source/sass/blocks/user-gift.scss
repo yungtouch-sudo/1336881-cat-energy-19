@@ -2,6 +2,17 @@
   background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   width: 280px;
   height: 289px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-gift.svg") no-repeat;
+    width: 56px;
+    height: 61px;
+    top: 0;
+    left: 0;
+  }
 }
 
 .user-gift__text {
