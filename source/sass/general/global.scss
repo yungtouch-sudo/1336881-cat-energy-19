@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -34,4 +35,29 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.container-fix {
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 50px;
+  }
+  @media (min-width: $desctop-width) {
+    width: $desctop-width;
+  }
+}
+
+.conteiner-rubber {
+  min-width: 320px;
+  padding: 0 30px;
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+  @media (min-width: $desctop-width) {
+    margin: 0 auto;
+    max-width: $desctop-width;
+  }
 }
