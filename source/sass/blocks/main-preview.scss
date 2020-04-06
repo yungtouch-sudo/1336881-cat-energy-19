@@ -1,9 +1,12 @@
-.main-preview {}
+.main-preview {
+  height: 460px;
+}
 
 .main-preview__background {
   background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat;
-  width: 100%;
+  width: 320px;
   height: 305px;
+  margin: 0 auto;
 }
 
 .main-preview__title {
@@ -28,7 +31,6 @@
   text-align: center;
   background-color: #68b738;
   color: #ffffff;
-  margin-top:100px;
 }
 
 .main-preview__text {
@@ -38,4 +40,28 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media (min-width: $tablet-width) {
+  .main-preview__background {
+    background-image: none;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .main-preview__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
+
+  .main-preview__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    color: #111111;
+  }
 }
