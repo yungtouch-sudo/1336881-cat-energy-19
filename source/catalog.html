@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container-fix">
     <a class="page-header__logo">
       <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />
     </a>
@@ -29,7 +30,7 @@
       </div>
     </nav>
   </header>
-  <section class="main-catalog">
+  <section class="main-catalog container-fix">
     <h2 class="main-catalog__title great-title">Каталог продукции</h2>
     <div class="catalog-item">
       <ul class="catalog-list">
@@ -278,129 +279,150 @@
           </table>
           <a class="catalog-card__link" href="#">Заказать</a>
         </li>
+        <li>
+          <div class="catalog-full catalog-full--decoration">
+            <h3 class="catalog-full__title">Показать еще 100500 товаров</h3>
+            <p class="catalog-full__text">
+              На самом деле вкусов гораздо больше!
+            </p>
+            <a class="catalog-full__link" href="#">Показать все</a>
+          </div>
+        </li>
       </ul>
-    </div>
-    <div class="catalog-full catalog-full--decoration">
-      <h3 class="catalog-full__title">Показать еще 100500 товаров</h3>
-      <p class="catalog-full__text">
-        На самом деле вкусов гораздо больше!
-      </p>
-      <a class="catalog-full__link" href="#">Показать все</a>
     </div>
   </section>
   <section class="additional">
-    <h2 class="additional__title">Дополнительные товары</h2>
-    <div class="additional-items">
-      <p class="additional-items__unit">
-        Сахарозаменитель
-      </p>
-      <table class="additional-items__stats">
-        <tr>
-          <td class="additional-items__property">
-            1 упаковка (100 г)
-          </td>
-          <td class="additional-items__value">
-            200 Р.
-          </td>
-        </tr>
-      </table>
-      <a class="additional-items__link" href="#">Заказать</a>
+    <div class="additional__title-wrap">
+      <div class="container-fix">
+        <h2 class="additional__title">Дополнительные товары</h2>
+      </div>
     </div>
-    <div class="additional-items">
-      <p class="additional-items__unit">
-        Питьевая вода
-      </p>
-      <table class="additional-items__stats">
-        <tr>
-          <td class="additional-items__property">
-            5 литров
-          </td>
-          <td class="additional-items__value">
-            50 Р.
-          </td>
-        </tr>
-      </table>
-      <a class="additional-items__link" href="#">Заказать</a>
-    </div>
-    <div class="additional-items">
-      <p class="additional-items__unit">
-        Молоко
-      </p>
-      <table class="additional-items__stats">
-        <tr>
-          <td class="additional-items__property">
-            1 литр
-          </td>
-          <td class="additional-items__value">
-            100 Р.
-          </td>
-        </tr>
-      </table>
-      <a class="additional-items__link" href="#">Заказать</a>
-    </div>
-    <div class="additional-items">
-      <p class="additional-items__unit">
-        Витамины
-      </p>
-      <table class="additional-items__stats">
-        <tr>
-          <td class="additional-items__property">
-            1 упаковка (30 г)
-          </td>
-          <td class="additional-items__value">
-            300 Р.
-          </td>
-        </tr>
-      </table>
-      <a class="additional-items__link" href="#">Заказать</a>
-    </div>
-    <div class="user-gift">
-      <p class="user-gift__text">
-        Закажите все и получите чехол для кота в подарок!
-      </p>
+    <div class="additional__container container-fix">
+      <div class="additional-items">
+        <div class="additional-items__tablet">
+          <p class="additional-items__unit">
+            Сахарозаменитель
+          </p>
+          <table class="additional-items__stats">
+            <tr>
+              <td class="additional-items__property">
+                1 упаковка (100 г)
+              </td>
+              <td class="additional-items__value">
+                200 Р.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <a class="additional-items__link" href="#">Заказать</a>
+
+      </div>
+      <div class="additional-items">
+        <div class="additional-items__pack">
+          <p class="additional-items__unit">
+            Питьевая вода
+          </p>
+          <table class="additional-items__stats">
+            <tr>
+              <td class="additional-items__property">
+                5 литров
+              </td>
+              <td class="additional-items__value">
+                50 Р.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <a class="additional-items__link" href="#">Заказать</a>
+      </div>
+      <div class="additional-items">
+        <div class="additional-items__pack">
+          <p class="additional-items__unit">
+            Молоко
+          </p>
+          <table class="additional-items__stats">
+            <tr>
+              <td class="additional-items__property">
+                1 литр
+              </td>
+              <td class="additional-items__value">
+                100 Р.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <a class="additional-items__link" href="#">Заказать</a>
+      </div>
+      <div class="additional-items">
+        <div class="additional-items__pack">
+          <p class="additional-items__unit">
+            Витамины
+          </p>
+          <table class="additional-items__stats">
+            <tr>
+              <td class="additional-items__property">
+                1 упаковка (30 г)
+              </td>
+              <td class="additional-items__value">
+                300 Р.
+              </td>
+            </tr>
+          </table>
+        </div>
+        <a class="additional-items__link" href="#">Заказать</a>
+      </div>
+      <div class="user-gift">
+        <p class="user-gift__text">
+          Закажите все и получите чехол для кота в подарок!
+        </p>
+      </div>
     </div>
   </section>
   <footer class="page-footer">
     <div class="user-invite">
-      <p class="user-invite__text">
-        приглашаем к сотрудничеству дилеров!
-      </p>
-      <p class="user-invite__geo">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
+      <div class="container-fix">
+        <p class="user-invite__text">
+          приглашаем к сотрудничеству дилеров!
+        </p>
+        <p class="user-invite__geo">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
     </div>
     <div class="page-footer__wrap">
       <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
       <!-- <iframe>MAP</iframe> -->
     </div>
     <div class="page-footer__backcolor">
-      <a href="index.html" class="page-footer__link">
-        <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__items">
-          <a aria-label="В контакте" class="social__link" href="#">
-            <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип ВК" />
-          </a>
-        </li>
-        <li class="social__items">
-          <a aria-label="Инстаграмм" class="social__link" href="#">
-            <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграмм" />
-          </a>
-        </li>
-        <li class="social__items">
-          <a aria-label="Фейсбук" class="social__link" href="#">
-            <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук" />
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">
-          <p class="copyright__text">
-            HTML Academy
-          </p>
-          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML academy" />
+      <div class="container-fix">
+        <a href="index.html" class="page-footer__link">
+          <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
         </a>
+        <ul class="page-footer__social social">
+          <li class="social__items">
+            <a aria-label="В контакте" class="social__link" href="#">
+              <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип ВК" />
+            </a>
+          </li>
+          <li class="social__items">
+            <a aria-label="Инстаграмм" class="social__link" href="#">
+              <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграмм" />
+            </a>
+          </li>
+          <li class="social__items">
+            <a aria-label="Фейсбук" class="social__link" href="#">
+              <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук" />
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="#">
+            <p class="copyright__text">
+              HTML Academy
+            </p>
+            <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML academy" />
+          </a>
+        </div>
       </div>
     </div>
   </footer>

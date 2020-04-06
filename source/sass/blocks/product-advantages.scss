@@ -112,3 +112,9 @@
   left: -70px;
   z-index: 2;
 }
+@media (min-width: $tablet-width){
+  .product-advantages__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
