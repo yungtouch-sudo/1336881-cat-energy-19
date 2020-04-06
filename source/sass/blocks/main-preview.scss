@@ -46,6 +46,7 @@
     background-image: none;
     background-color: transparent;
     width: 100%;
+    position: relative;
   }
 
   .main-preview__title {
@@ -63,5 +64,10 @@
     text-transform: uppercase;
     text-align: left;
     color: #111111;
+  }
+  .main-preview__image{
+    position: absolute;
+    top:150px;
+    left:0;
   }
 }
