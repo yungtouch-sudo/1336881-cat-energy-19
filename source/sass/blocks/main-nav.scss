@@ -24,12 +24,18 @@
     left: 0;
   }
 }
-@media (min-width: $tablet-width){
-  .main-nav__toggle{
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
     display: none;
   }
-  .main-nav{
+
+  .main-nav {
     margin: 0;
     width: 768px;
+  }
+}
+@media (min-width: $desktop-width){
+  .main-nav{
+    z-index: 1;
   }
 }

@@ -71,3 +71,10 @@
     left:0;
   }
 }
+@media (min-width: $desktop-width){
+  .main-preview__background{
+    background-image: linear-gradient(to right, #ffffff 50%, green 50%);
+    margin-top: -85px;
+    padding-top: 80px;
+  }
+}

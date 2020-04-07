@@ -4,5 +4,11 @@
 @media (min-width: $tablet-width){
   .page-header{
     display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width){
+  .page-header__logo{
+    z-index: 1;
   }
 }
