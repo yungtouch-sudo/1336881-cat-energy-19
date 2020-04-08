@@ -51,3 +51,18 @@
   text-align: center;
   color: #444444;
 }
+@media (min-width: $tablet-width) {
+  .user-form__wrapper {
+    display: flex;
+  }
+}
+@media (min-width: $desktop-width) {
+  .user-form__wrapper {
+    display: inline-flex;
+  }
+}
+@media (min-width: $desktop-width){
+  .user-form__section{
+    display: flex;
+  }
+}

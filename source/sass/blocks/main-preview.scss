@@ -4,8 +4,8 @@
 
 .main-preview__background {
   background: #68b738 url("../img/index-background-mobile@1x.jpg") no-repeat;
-  width: 320px;
   height: 305px;
+  background-position: center;
   margin: 0 auto;
 }
 
@@ -65,16 +65,26 @@
     text-align: left;
     color: #111111;
   }
-  .main-preview__image{
+
+  .main-preview__image {
     position: absolute;
-    top:150px;
-    left:0;
+    top: 150px;
+    left: calc(50% - 30px);
   }
 }
-@media (min-width: $desktop-width){
-  .main-preview__background{
+@media (min-width: $desktop-width) {
+  .main-preview__background {
     background-image: linear-gradient(to right, #ffffff 50%, green 50%);
+    background: url("../img/index-background-desktop@1x.jpg")no-repeat;
+    background-position: right;
     margin-top: -85px;
     padding-top: 80px;
+  }
+
+  .main-preview__image {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 177px);
+    // right: -650px;
   }
 }

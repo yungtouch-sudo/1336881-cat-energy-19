@@ -47,3 +47,9 @@
     justify-content: space-between;
   }
 }
+@media (min-width: $desktop-width){
+  .additional-items{
+    display: flex;
+    align-items: center;
+  }
+}

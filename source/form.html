@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container-fix">
     <a class="page-header__logo">
       <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />
     </a>
@@ -31,12 +31,14 @@
     </nav>
   </header>
   <main class="page-form">
-    <section class="program-selection">
+    <section class="program-selection container-fix">
       <h1 class="great-title program-selection__title">Подбор программы</h1>
       <p class="program-selection__text">
         Заполните анкету и мы подберем программу питания для вашего кота
       </p>
       <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="user-form__section">
+          <div class="user-form__fieldset-wrapper">
         <fieldset class="user-form__fieldset">
           <p class="user-form__wrap">
             <label class="user-form__label" for="pet-name">Имя:*</label>
@@ -51,6 +53,8 @@
             <input class="user-form__control" id="pet-age" type="text" name="age" placeholder="7">
           </p>
         </fieldset>
+        </div>
+        <div class="user-form__fieldset-wrapper">
         <fieldset class="user-form__fieldset">
           <p class="user-form__wrap">
             <input class="user-form__control" type="radio" id="slimming" name="pet-program" value="slimming" checked>
@@ -65,6 +69,8 @@
             <label class="user-form__label" for="userhelp">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
+        </div>
+</div>
         <fieldset class="user-form__fieldset">
           <legend class="user-form__title">
             Контактные данные (владельца кота)
@@ -88,6 +94,7 @@
           <legend class="user-form__title">
             Дополнительно
           </legend>
+          <div class="user-form__wrapper">
           <p class="user-form__wrap">
             <input class="user-form__control" type="checkbox" name="sweetener" id="add-sweetener">
             <label class="user-form__label" for="add-sweetener">Сахарозаменитель</label>
@@ -96,6 +103,8 @@
             <input class="user-form__control" type="checkbox" name="water" id="add-water">
             <label class="user-form__label" for="add-water">Питьевая вода</label>
           </p>
+          </div>
+          <div class="user-form__wrapper">
           <p class="user-form__wrap">
             <input class="user-form__control" type="checkbox" name="milk" id="add-milk">
             <label class="user-form__label" for="add-milk">Молоко</label>
@@ -104,6 +113,7 @@
             <input class="user-form__control" type="checkbox" name="vitamins" id="add-vitamins">
             <label class="user-form__label" for="add-vitamins">Витамины</label>
           </p>
+        </div>
         </fieldset>
         <button class="user-form__btn" type="submit">Отправить заявку</button>
         <small class="user-form__star"><sup>*</sup>— Обязательные поля</small>
