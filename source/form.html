@@ -31,92 +31,108 @@
     </nav>
   </header>
   <main class="page-form">
-    <section class="program-selection container-fix">
-      <h1 class="great-title program-selection__title">Подбор программы</h1>
-      <p class="program-selection__text">
-        Заполните анкету и мы подберем программу питания для вашего кота
-      </p>
+    <section class="program-selection">
+      <div class="program-selection__container container-fix">
+        <h1 class="great-title program-selection__title">Подбор программы</h1>
+        <p class="program-selection__text">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+      </div>
       <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="user-form__section">
+        <div class="user-form__section container-fix">
           <div class="user-form__fieldset-wrapper">
-        <fieldset class="user-form__fieldset">
-          <p class="user-form__wrap">
-            <label class="user-form__label" for="pet-name">Имя:*</label>
-            <input class="user-form__control" id="pet-name" type="text" name="name" placeholder="Барсик">
-          </p>
-          <p class="user-form__wrap">
-            <label class="user-form__label" for="pet-weight">Вес (кг):*</label>
-            <input class="user-form__control" id="pet-weight" type="text" name="weight" placeholder="7">
-          </p>
-          <p class="user-form__wrap">
-            <label class="user-form__label" for="pet-age">Возраст (лет):</label>
-            <input class="user-form__control" id="pet-age" type="text" name="age" placeholder="7">
-          </p>
-        </fieldset>
-        </div>
-        <div class="user-form__fieldset-wrapper">
-        <fieldset class="user-form__fieldset">
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="radio" id="slimming" name="pet-program" value="slimming" checked>
-            <label class="user-form__label" for="slimming">Похудение</label>
-          </p>
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="radio" id="upweight" name="pet-program" value="upweight">
-            <label class="user-form__label" for="upweight">Набор массы</label>
-          </p>
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="radio" id="userhelp" name="pet-program" value="userhelp">
-            <label class="user-form__label" for="userhelp">Не знаю (Нужен ваш совет)</label>
-          </p>
-        </fieldset>
-        </div>
-</div>
-        <fieldset class="user-form__fieldset">
-          <legend class="user-form__title">
-            Контактные данные (владельца кота)
-          </legend>
-          <p class="user-form__wrap">
-            <label class="user-form__label" for="user-email">E-mail:*</label>
-            <input class="user-form__control" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
-          </p>
-          <p class="user-form__wrap">
-            <label class="user-form__label" for="user-phone">Телефон:*</label>
-            <input class="user-form__control" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
-          </p>
-        </fieldset>
-        <fieldset class="user-form__fieldset">
-          <p class="user-form__wrap">
-            <label class="user-form__title" for="user-comment">Комментарий</label>
-            <textarea class="user-form__control" id="user-comment" name="comment" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </p>
-        </fieldset>
-        <fieldset class="user-form__fieldset">
-          <legend class="user-form__title">
-            Дополнительно
-          </legend>
-          <div class="user-form__wrapper">
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="checkbox" name="sweetener" id="add-sweetener">
-            <label class="user-form__label" for="add-sweetener">Сахарозаменитель</label>
-          </p>
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="checkbox" name="water" id="add-water">
-            <label class="user-form__label" for="add-water">Питьевая вода</label>
-          </p>
+            <fieldset class="user-form__fieldset">
+              <p class="user-form__wrap">
+                <label class="user-form__label" for="pet-name">Имя:*</label>
+                <input class="user-form__control" id="pet-name" type="text" name="name" placeholder="Барсик">
+              </p>
+              <p class="user-form__wrap">
+                <label class="user-form__label" for="pet-weight">Вес (кг):*</label>
+                <input class="user-form__control" id="pet-weight" type="text" name="weight" placeholder="7">
+              </p>
+              <p class="user-form__wrap">
+                <label class="user-form__label" for="pet-age">Возраст (лет):</label>
+                <input class="user-form__control" id="pet-age" type="text" name="age" placeholder="7">
+              </p>
+            </fieldset>
           </div>
-          <div class="user-form__wrapper">
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="checkbox" name="milk" id="add-milk">
-            <label class="user-form__label" for="add-milk">Молоко</label>
-          </p>
-          <p class="user-form__wrap">
-            <input class="user-form__control" type="checkbox" name="vitamins" id="add-vitamins">
-            <label class="user-form__label" for="add-vitamins">Витамины</label>
-          </p>
+          <div class="user-form__fieldset-wrapper">
+            <fieldset class="user-form__fieldset">
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="radio" id="slimming" name="pet-program" value="slimming" checked>
+                <label class="user-form__label" for="slimming">Похудение</label>
+              </p>
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="radio" id="upweight" name="pet-program" value="upweight">
+                <label class="user-form__label" for="upweight">Набор массы</label>
+              </p>
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="radio" id="userhelp" name="pet-program" value="userhelp">
+                <label class="user-form__label" for="userhelp">Не знаю (Нужен ваш совет)</label>
+              </p>
+            </fieldset>
+          </div>
         </div>
+        <fieldset class="user-form__fieldset">
+          <div class="user-form__title-wrap">
+            <legend class="user-form__title container-fix">
+              Контактные данные (владельца кота)
+            </legend>
+          </div>
+          <div class="user-form__container container-fix">
+            <p class="user-form__wrap">
+              <label class="user-form__label" for="user-email">E-mail:*</label>
+              <input class="user-form__control" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="user-form__wrap">
+              <label class="user-form__label" for="user-phone">Телефон:*</label>
+              <input class="user-form__control" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </div>
         </fieldset>
-        <button class="user-form__btn" type="submit">Отправить заявку</button>
-        <small class="user-form__star"><sup>*</sup>— Обязательные поля</small>
+        <fieldset class="user-form__fieldset">
+          <p class="user-form__wrap">
+            <div class="user-form__title-wrap container-fix">
+              <label class="user-form__title" for="user-comment">Комментарий</label>
+            </div>
+            <div class="user-form__control-container container-fix">
+              <textarea class="user-form__control" id="user-comment" name="comment" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </p>
+        </fieldset>
+        <fieldset class="user-form__fieldset">
+          <div class="user-form__title-wrap ">
+            <legend class="user-form__title container-fix">
+              Дополнительно
+            </legend>
+          </div>
+          <div class="user-form__container container-fix">
+            <div class="user-form__wrapper">
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="checkbox" name="sweetener" id="add-sweetener">
+                <label class="user-form__label" for="add-sweetener">Сахарозаменитель</label>
+              </p>
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="checkbox" name="water" id="add-water">
+                <label class="user-form__label" for="add-water">Питьевая вода</label>
+              </p>
+            </div>
+            <div class="user-form__wrapper">
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="checkbox" name="milk" id="add-milk">
+                <label class="user-form__label" for="add-milk">Молоко</label>
+              </p>
+              <p class="user-form__wrap">
+                <input class="user-form__control" type="checkbox" name="vitamins" id="add-vitamins">
+                <label class="user-form__label" for="add-vitamins">Витамины</label>
+              </p>
+            </div>
+          </div>
+        </fieldset>
+        <div class="user-form__send-container container-fix">
+          <button class="user-form__btn" type="submit">Отправить заявку</button>
+          <small class="user-form__star"><sup>*</sup>— Обязательные поля</small>
+        </div>
       </form>
     </section>
   </main>
