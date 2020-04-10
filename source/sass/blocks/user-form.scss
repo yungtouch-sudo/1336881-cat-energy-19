@@ -27,6 +27,7 @@
   line-height: 1;
   text-align: left;
   color: #111111;
+  background-color: #ffffff;
 }
 
 .user-form__btn {
@@ -51,6 +52,10 @@
   text-align: center;
   color: #444444;
 }
+
+.user-form__fieldset {
+  padding: 0;
+}
 @media (min-width: $tablet-width) {
   .user-form__wrapper {
     display: flex;
@@ -60,9 +65,40 @@
   .user-form__wrapper {
     display: inline-flex;
   }
-}
-@media (min-width: $desktop-width){
-  .user-form__section{
+
+  .user-form__section {
     display: flex;
+  }
+}
+
+.user-form__fieldset {
+  position: relative;
+}
+
+.user-form__fieldset--line {
+  &::before {
+    top: 35px;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    vertical-align: middle;
+    background-color: red;
+    position: absolute;
+    content: "";
+    display: inline-block;
+  }
+}
+
+.user-form__fieldset--line-label {
+  &::before {
+    top: 15px;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    vertical-align: middle;
+    background-color: red;
+    position: absolute;
+    content: "";
+    display: inline-block;
   }
 }
