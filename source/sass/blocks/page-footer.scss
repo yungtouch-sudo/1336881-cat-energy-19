@@ -1,5 +1,6 @@
+
 .page-footer__backcolor {
-  background-color: #f2f2f2;
+  background-color: red;
 }
 
 .page-footer__social {
@@ -9,6 +10,7 @@
 
 .page-footer__wrap {
   position: relative;
+  text-align: center;
 
   &::before {
     content: "";

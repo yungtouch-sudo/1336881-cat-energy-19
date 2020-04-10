@@ -1,3 +1,8 @@
-.product-info__list{
-padding-left: 0px;
+.product-info__list {
+  padding-left: 0;
+}
+@media (min-width: $desktop-width) {
+  .product-info__list {
+    display: flex;
+  }
 }

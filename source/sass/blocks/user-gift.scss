@@ -1,6 +1,6 @@
 .user-gift {
   background: #68b738 url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  width: 280px;
+  width: auto;
   height: 289px;
   position: relative;
 
@@ -25,4 +25,40 @@
 
 .user-form__fieldset {
   border: 0;
+}
+@media (min-width: $tablet-width) {
+  .user-gift {
+    background: #68b738 url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    width: auto;
+    height: 200px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/icon-gift.svg") no-repeat;
+      width: 56px;
+      height: 61px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .user-gift {
+    background: #68b738 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+    width: auto;
+    height: 289px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/icon-gift.svg") no-repeat;
+      width: 56px;
+      height: 61px;
+      top: 0;
+      left: 0;
+    }
+  }
 }

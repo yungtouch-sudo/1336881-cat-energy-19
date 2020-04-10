@@ -6,3 +6,9 @@
   font-weight: normal;
   border-bottom: 1px solid tomato;
 }
+@media (min-width: $desktop-width){
+  .additional__container{
+    display: flex;
+    justify-content: space-between;
+  }
+}

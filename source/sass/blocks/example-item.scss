@@ -1,3 +1,8 @@
+.example-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .example-item__unit {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -13,4 +18,23 @@
   line-height: 1;
   //text-align: center;
   color: #444444;
+}
+
+.example-item__bottom-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  //text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.example-item__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: $desktop-width){
+  .example-item{
+    display: block;
+  }
 }

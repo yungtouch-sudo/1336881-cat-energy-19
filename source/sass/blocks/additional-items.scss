@@ -41,3 +41,15 @@
   padding-top: 13px;
   padding-bottom: 13px;
 }
+@media (min-width: $tablet-width){
+  .additional-items__pack{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width){
+  .additional-items{
+    display: flex;
+    align-items: center;
+  }
+}
