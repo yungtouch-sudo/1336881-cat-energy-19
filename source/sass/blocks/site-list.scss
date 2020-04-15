@@ -11,12 +11,29 @@
 
 .site-list__item {
   margin: 0;
-  padding: 0;
-
+  padding-top: 23px;
+  padding-bottom: 22px;
   list-style: none;
+  padding-left: 10px;
+
+  &:first-child {
+    padding-left: 62px;
+  }
 }
-@media (min-width: $tablet-width){
-  .site-list{
+@media (min-width: $tablet-width) {
+  .site-list {
     display: flex;
+    padding-left: 15px;
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.39;
+    color: #222222;
+  }
+  .site-list__item{
+    padding-left: 36px;
+    padding-right: 0;
   }
 }

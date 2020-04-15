@@ -1,14 +1,15 @@
-.page-header{
-  padding: 1px;
+.page-header {
+  margin-top: 10px;
 }
-@media (min-width: $tablet-width){
-  .page-header{
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-top: 4px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
   }
 }
-@media (min-width: $desktop-width){
-  .page-header__logo{
+@media (min-width: $desktop-width) {
+  .page-header__logo {
     z-index: 1;
   }
 }

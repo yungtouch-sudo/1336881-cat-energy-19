@@ -7,5 +7,25 @@
 }
 
 .copyright__link {
+  display: inline-flex;
   text-decoration: none;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.copyright__image {
+  margin-left: 130px;
+}
+@media (min-width: $tablet-width) {
+  .copyright__image {
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+
+  .copyright__link {
+    padding-left: 27px;
+  }
+  .copyright__text{
+    margin-top: 25px;
+  }
 }

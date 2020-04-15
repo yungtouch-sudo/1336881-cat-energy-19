@@ -1,9 +1,8 @@
 .main-nav {
   position: relative;
-  width: 320px;
   margin: 0 auto;
-}
 
+}
 .main-nav__toggle {
   width: 25px;
   height: 19px;
@@ -31,7 +30,7 @@
 
   .main-nav {
     margin: 0;
-    width: 768px;
+    width: 523px;
   }
 }
 @media (min-width: $desktop-width){

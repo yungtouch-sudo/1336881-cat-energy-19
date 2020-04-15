@@ -1,3 +1,9 @@
+.user-invite {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
 .user-invite__text {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -13,4 +19,24 @@
   line-height: 1.43;
   text-align: left;
   color: #444444;
+  padding-left: 17px;
+  padding-top: 2px;
 }
+  @media (min-width: $tablet-width){
+    .user-invite__text{
+      font-size: 20px;
+      line-height: 1.25;
+      text-align: left;
+      width: 154px;
+      padding-left: 41px;
+    }
+    .user-invite__geo{
+      font-size: 16px;
+      line-height: 1.25;
+      text-align: right;
+      width: 210px;
+    }
+    .user-invite__wrapper{
+      padding-right: 42px;
+    }
+  }

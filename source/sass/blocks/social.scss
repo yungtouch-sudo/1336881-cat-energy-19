@@ -1,3 +1,32 @@
-.social__items{
+.social__items {
   list-style: none;
+  padding-left: 37px;
+}
+
+.social li:first-child {
+  padding-left: 73px;
+}
+@media (min-width: $tablet-width) {
+  .social__image--vk {
+    width: 30px;
+    height: 16px;
+    margin-top: 4px;
+  }
+
+  .social__image--insta {
+    width: 23px;
+    height: 23px;
+    margin-left: 29px;
+  }
+
+  .social__image--fb {
+    width: 14px;
+    height: 28px;
+    margin-left: 29px;
+    margin-top: -2px;
+  }
+
+  .social__items {
+    padding: 0;
+  }
 }

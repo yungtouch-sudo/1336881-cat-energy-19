@@ -11,7 +11,8 @@
 <body>
   <header class="page-header container-fix">
     <a class="page-header__logo">
-      <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />
+      <!--<img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />-->
+      <img class="page-header__logo-icon" src="img/logo-desktop.svg" width="203" height="60" alt="Кэт энерджи" />
     </a>
     <nav class="main-nav">
       <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
@@ -37,6 +38,7 @@
           <h1 class="main-preview__title">Функциональное питание для котов</h1>
           <p class="main-preview__text">Занялся собой? Займись котом!</p>
           <img class="main-preview__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Банка с кормом" />
+          <!--<img class="main-preview__image" src="img/index-can-tablet@1x.jpg" width="709" height="609" alt="Банка с кормом" />-->
           <a class="main-preview__link" href="#">Подобрать программу</a>
         </div>
       </div>
@@ -51,7 +53,7 @@
           </li>
           <li class="product-list product-list--2">
             <h2 class="product-list__title">Набор массы</h2>
-            <p class="product-list__text">Заработать авторитет среди дворовых котов и даже собак?Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <p class="product-list__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="product-list__link" href="#">Каталог pro</a>
           </li>
         </ul>
@@ -60,26 +62,34 @@
     <section class="product-advantages container-fix">
       <h2 class="product-advantages__title">Как это работает</h2>
       <ul class="product-advantages__list">
-        <li class="product-advantages__item product-advantages__item--1">
-          <p class="product-advantages__text">
-            Функциональное питание содержит только полезные питательные вещества.
-          </p>
-        </li>
-        <li class="product-advantages__item product-advantages__item--2">
-          <p class="product-advantages__text">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </p>
-        </li>
+        <div class="product-advantages__decor product-advantages__decor--1">
+          <li class="product-advantages__item product-advantages__item--1">
+            <p class="product-advantages__text">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
+          </li>
+        </div>
+        <div class="product-advantages__decor product-advantages__decor--2">
+          <li class="product-advantages__item product-advantages__item--2">
+            <p class="product-advantages__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            </p>
+          </li>
+        </div>
+        <div class="product-advantages__decor product-advantages__decor--3">
         <li class="product-advantages__item product-advantages__item--3">
           <p class="product-advantages__text">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
-        <li class="product-advantages__item product-advantages__item--4">
-          <p class="product-advantages__text">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </p>
-        </li>
+        </div>
+        <div class="product-advantages__decor product-advantages__decor--4">
+          <li class="product-advantages__item product-advantages__item--4">
+            <p class="product-advantages__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbspпитомца!
+            </p>
+          </li>
+        </div>
       </ul>
     </section>
     <section class="main-example">
@@ -92,14 +102,14 @@
             </p>
             <div class="example-item__wrapper">
               <div class="example-item__1">
-                <span class="example-item__unit">5 кг</span>
-                <p class="example-item__text">
+                <span class="example-item__unit example-item__unit--1">5 кг</span>
+                <p class="example-item__text example-item__text--1">
                   снижение веса
                 </p>
               </div>
               <div class="example-item__2">
-                <span class="example-item__unit">60 дней</span>
-                <p class="example-item__text">
+                <span class="example-item__unit example-item__unit--2">60 дней</span>
+                <p class="example-item__text example-item__text--2">
                   затрачено времени
                 </p>
               </div>
@@ -109,62 +119,71 @@
             </p>
           </div>
           <div class="user-expenses">
-            <img class="user-expenses__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Пухлый кот" />
-            <div class="view-changes">
-              <div class="view-changes__options bar" style=""></div>
-            </div>
+            <div class="user-expenses__wrapper">
+          <!--<img class="user-expenses__image" src="img/before-mobile@1x.png" width="311" height="232" alt="Пухлый кот" />-->
+          <img class="user-expenses__image" src="img/after-tablet@1x.png" width="690" height="517" alt="Не пухлый кот" />
+          </div>
+            <div class="view-changes__wrapper">
             <button aria-label="До" type="button" class="toggle toggle__before">Было</button>
+            <div class="view-changes">
+              <div class="view-changes__options" style=""></div>
+            </div>
             <button aria-label="После" type="button" class="toggle toggle__after">Стало</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__container container-fix">
-      <div class="user-invite">
+    <div class="page-footer__container">
+      <div class="user-invite container-fix">
         <p class="user-invite__text">
-          приглашаем к сотрудничеству дилеров!
+          приглашаем к&nbspсотрудничеству дилеров!
         </p>
+        <div class="user-invite__wrapper">
         <p class="user-invite__geo">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          ул. Большая Конюшенная, д. 19/8
         </p>
+        <p class="user-invite__geo">Санкт-Петербург</p>
+      </div>
       </div>
       <div class="page-footer__wrap">
-        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
+        <!--<img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">-->
+        <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
         <!-- <iframe>MAP</iframe> -->
       </div>
     </div>
     <div class="page-footer__backcolor">
-      <div class="page-footer__container container-fix">
+      <div class="page-footer__container page-footer__container-bottom container-fix">
         <a href="index.html" class="page-footer__link">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
         </a>
         <ul class="page-footer__social social">
           <li class="social__items">
             <a aria-label="В контакте" class="social__link" href="#">
-              <img class="social__image" src="img/icon-vk.svg" width="22" height="12" alt="Логотип ВК" />
+              <img class="social__image--vk" src="img/icon-vk.svg" width="22" height="12" alt="Логотип ВК" />
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Инстаграмм" class="social__link" href="#">
-              <img class="social__image" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграмм" />
+              <img class="social__image--insta" src="img/icon-insta.svg" width="17" height="17" alt="Логотип Инстаграмм" />
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Фейсбук" class="social__link" href="#">
-              <img class="social__image" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук" />
+              <img class="social__image--fb" src="img/icon-fb.svg" width="10" height="19" alt="Логотип Фейсбук" />
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="#">
-            <p class="copyright__text">
-              HTML Academy
-            </p>
-            <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML academy" />
-          </a>
-        </div>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">
+          <p class="copyright__text">
+            HTML Academy
+          </p>
+          <svg xmlns="http://www.w3.org/2000/svg" class="copyright__image" width="42" height="50" viewBox="0 0 60 60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        </a>
       </div>
     </div>
   </footer>

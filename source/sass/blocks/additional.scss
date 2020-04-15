@@ -1,3 +1,7 @@
+.additional {
+  margin-top: 25px;
+}
+
 .additional__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -5,9 +9,43 @@
   text-align: left;
   font-weight: normal;
   border-bottom: 1px solid tomato;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 32px;
 }
-@media (min-width: $desktop-width){
-  .additional__container{
+
+.additional__title::before {
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 3px;
+  background-color: #68b738;
+  top: 14px;
+  left: 247px;
+}
+
+.additional-items__unit {
+  margin-bottom: 12px;
+}
+
+.additional-items__stats {
+  display: block;
+
+  & tbody {
+    display: block;
+
+    & tr {
+      display: flex;
+      justify-content: space-between;
+
+      & td {
+        display: block;
+      }
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .additional__container {
     display: flex;
     justify-content: space-between;
   }

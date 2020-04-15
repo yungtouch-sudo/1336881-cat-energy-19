@@ -1,6 +1,7 @@
 .catalog-full {
   border-bottom: 1px solid green;
   position: relative;
+  padding-top: 85px;
 }
 
 .catalog-full--decoration::before {
@@ -9,8 +10,8 @@
   width: 31px;
   height: 31px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 46px;
+  left: 124px;
 }
 
 .catalog-full__title {
@@ -21,6 +22,8 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: #111111;
+  margin-bottom: 0;
+padding-left: 40px;
 }
 
 .catalog-full__text {
@@ -28,6 +31,8 @@
   font-size: 12px;
   line-height: 1.33;
   color: #444444;
+  margin-top: 8px;
+padding-left: 28px;
 }
 
 .catalog-full__link {
@@ -36,8 +41,9 @@
   line-height: 1.25;
   color: #444444;
   background-color: #f2f2f2;
-  padding: 13px 94px 13px 97px;
+  padding: 19px 92px 13px 96px;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 24px;
 }
