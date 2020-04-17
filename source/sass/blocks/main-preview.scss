@@ -97,30 +97,24 @@
 }
 @media (min-width: $desktop-width) {
   .main-preview__background {
-    background-image: linear-gradient(to right, #ffffff 50%, #65a93c 50%);
-position: relative;
-    margin-top: -102px;
+   background-image:  url("../img/index-background-desktop@1x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%) ;
+    margin-top: -132px;
     padding-top: 80px;
     height: 696px;
-    min-width: 1300px;
-    &::before{
-      content: "";
-      width: 720px;
-      height: 696px;
-      position:absolute;
-      background-image:  url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-      top:0;
-      right:0px;
-
-    }
+       background-position: left calc(50% + 360px)  top 0, left 0 top 0;
   }
 
   .main-preview__image {
     position: absolute;
-    top: 100px;
-    left: calc(50% - 177px);
-    // right: -650px;
+    top: 142px;
+    left: calc(50% - 161px);
+    z-index: 1;
+  }
+  .main-preview__title{
+    padding-left: 89px;
+padding-top: 102px;
+  }
+  .main-preview__link{
+    margin-top: 22px;
   }
 }

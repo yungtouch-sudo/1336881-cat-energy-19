@@ -11,5 +11,11 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     z-index: 1;
+    padding-top: 31px;
+    padding-left: 10px;
+  }
+
+  .page-header {
+    justify-content: space-between;
   }
 }

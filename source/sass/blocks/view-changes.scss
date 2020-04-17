@@ -2,6 +2,7 @@
   width: 84px;
   height: 14px;
   padding: 0 6px;
+  margin-top: 2px;
   vertical-align: middle;
   background-color: #ffffff;
   border: 1px solid rgba(205, 205, 205, 0.5);
@@ -98,4 +99,21 @@
     margin-top: 17px;
     padding-left: 92px;
   }
+}
+@media (min-width: $desktop-width){
+  .view-changes__wrapper{
+  padding-left: 178px;
+padding-top: 7px;
+}
+.view-changes{
+  margin-top: 13px;
+}
+.toggle__before{
+  padding-bottom: 8px;
+  padding-top: 5px;
+}
+.toggle__after{
+  padding-top: 11px;
+  padding-bottom: 5px;
+}
 }

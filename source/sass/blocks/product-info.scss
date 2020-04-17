@@ -10,12 +10,22 @@
   .product-info {
     margin-top: 350px;
   }
-  .product-info__list{
+
+  .product-info__list {
     padding-top: 13px;
   }
 }
 @media (min-width: $desktop-width) {
+  .product-info {
+    margin-top: 30px;
+  }
+
   .product-info__list {
     display: flex;
+    flex-wrap: wrap;
+
+    & li:nth-child(2n) {
+      margin-left: 78px;
+    }
   }
 }

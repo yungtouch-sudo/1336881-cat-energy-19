@@ -1,6 +1,18 @@
-.main-catalog__title{
+.main-catalog__title {
   margin-bottom: 0;
 }
-.main-catalog__items{
+
+.main-catalog__items {
   margin-top: 25px;
+}
+@media (min-width: $tablet-width) {
+  .main-catalog__items {
+    margin-top: 62px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-catalog__title {
+
+
+  }
 }

@@ -37,3 +37,23 @@
     padding-right: 0;
   }
 }
+@media (min-width: $desktop-width){
+  .site-list__link{
+    font-size: 20px;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+  .site-list__link--deskcolor{
+    color: #111111;
+  }
+  .site-list__item{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+.site-list__item:first-child{
+  padding-left: 18px;
+}
+.site-list__item:last-child{
+  padding-right: 0;
+}
+}

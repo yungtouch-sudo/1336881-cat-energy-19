@@ -32,6 +32,7 @@
     background: #68b738 url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     width: auto;
     height: 200px;
+    margin-top: 68px;
     position: relative;
 
     &::before {
@@ -40,17 +41,24 @@
       background: url("../img/icon-gift.svg") no-repeat;
       width: 56px;
       height: 61px;
-      top: 0;
-      left: 0;
+      top: 64px;
+      left: 91px;
     }
+  }
+
+  .user-gift__text {
+    width: 159px;
+    height: 56px;
   }
 }
 @media (min-width: $desktop-width) {
   .user-gift {
     background: #68b738 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
-    width: auto;
+    width: 245px;
     height: 289px;
-    position: relative;
+    position: absolute;
+    right: 40px;
+    margin-top: 48px;
 
     &::before {
       content: "";
@@ -58,8 +66,14 @@
       background: url("../img/icon-gift.svg") no-repeat;
       width: 56px;
       height: 61px;
-      top: 0;
-      left: 0;
+      top: 64px;
+      left: 96px
+    }
+
+    &__text {
+      margin-top: 186px;
+      margin-left: 32px;
+      width: 180px;
     }
   }
 }

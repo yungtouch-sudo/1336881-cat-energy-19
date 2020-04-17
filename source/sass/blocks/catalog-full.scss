@@ -23,7 +23,7 @@
   text-transform: uppercase;
   color: #111111;
   margin-bottom: 0;
-padding-left: 40px;
+  padding-left: 40px;
 }
 
 .catalog-full__text {
@@ -32,7 +32,7 @@ padding-left: 40px;
   line-height: 1.33;
   color: #444444;
   margin-top: 8px;
-padding-left: 28px;
+  padding-left: 28px;
 }
 
 .catalog-full__link {
@@ -46,4 +46,67 @@ padding-left: 28px;
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 24px;
+}
+@media (min-width: $tablet-width) {
+  .catalog-full {
+    width: 324px;
+    height: 432px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
+    margin-top: 105px;
+
+    &--decoration::before {
+      background: url("../img/icon-plus.svg") no-repeat;
+      width: 61px;
+      height: 61px;
+      top: 54px;
+      left: 130px;
+    }
+  }
+
+  .catalog-full__title {
+    width: 239px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+    padding-left: 83px;
+    padding-top: 59px;
+  }
+
+  .catalog-full__text {
+    font-size: 16px;
+    line-height: normal;
+    width: 256px;
+    text-align: center;
+    padding-left: 67px;
+    padding-top: 18px;
+  }
+
+  .catalog-full__link {
+    padding: 11px 76px 11px 82px;
+    margin-left: 36px;
+    margin-top: 69px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .catalog-full {
+    width: 245px;
+    height: 432px;
+    margin-right: 10px;
+    margin-left: 10px;
+    &__title{
+      width: 210px;
+      padding-left: 37px;
+    }
+    &__text{
+      width: 230px;
+      padding-left: 11px;
+    }
+    &__link{
+      padding: 11px 39px 11px 41px;
+      margin-left: 36px;
+    }
+    &--decoration::before{
+      left: 92px;
+    }
+  }
 }
