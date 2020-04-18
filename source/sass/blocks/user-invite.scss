@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .user-invite__text {
@@ -28,6 +30,10 @@
   padding-top: 16px;
 }
 @media (min-width: $tablet-width) {
+  .user-invite{
+    padding-left: 30px;
+padding-right: 30px;
+  }
   .user-invite__text {
     font-size: 20px;
     line-height: 1.25;

@@ -1,11 +1,31 @@
 .page-header {
-  margin-top: 10px;
+  &__logo-icon {
+    width: 191px;
+    height: 39px;
+  }
+
+  &__wrapper {
+    padding-top: 10px;
+  }
 }
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-top: 4px;
     display: flex;
     align-items: center;
+
+    &__logo {
+      width: 174px;
+      padding-top: 14px;
+    }
+
+    &__logo-icon {
+      width: 174px;
+      height: 59px;
+    }
+
+    &__wrapper {
+      display: flex;
+    }
   }
 }
 @media (min-width: $desktop-width) {
@@ -13,9 +33,19 @@
     z-index: 1;
     padding-top: 31px;
     padding-left: 10px;
+    width: 212px;
+    padding-top: 49px;
+
+    &-icon {
+      width: 212px;
+      height: 60px;
+    }
   }
 
-  .page-header {
+  .page-header__wrapper {
     justify-content: space-between;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }

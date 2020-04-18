@@ -54,11 +54,13 @@
       margin-left: 5px;
       margin-top: -1px;
       padding-bottom: 6px;
+      z-index: 1;
     }
 
     &__after {
       margin-left: 21px;
       margin-top: -7px;
+      z-index: 1;
     }
   }
 
@@ -103,7 +105,7 @@
 @media (min-width: $desktop-width){
   .view-changes__wrapper{
   padding-left: 178px;
-padding-top: 7px;
+  margin-top: -159px;
 }
 .view-changes{
   margin-top: 13px;
@@ -111,9 +113,11 @@ padding-top: 7px;
 .toggle__before{
   padding-bottom: 8px;
   padding-top: 5px;
+  z-index: 1;
 }
 .toggle__after{
   padding-top: 11px;
   padding-bottom: 5px;
+  z-index: 1;
 }
 }

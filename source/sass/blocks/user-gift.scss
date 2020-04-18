@@ -3,6 +3,7 @@
   width: auto;
   height: 289px;
   position: relative;
+  margin-top: 42px;
 
   &::before {
     content: "";
@@ -10,8 +11,8 @@
     background: url("../img/icon-gift.svg") no-repeat;
     width: 56px;
     height: 61px;
-    top: 0;
-    left: 0;
+    top: 65px;
+    left: 113px;
   }
 }
 
@@ -21,7 +22,9 @@
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
-  margin-top: 42px;
+width: 230px;
+padding-top: 184px;
+padding-left: 49px;
 }
 
 .user-form__fieldset {
@@ -47,8 +50,10 @@
   }
 
   .user-gift__text {
-    width: 159px;
-    height: 56px;
+    padding-top: 69px;
+    padding-left: 424px;
+    width: 590px;
+    text-align: left;
   }
 }
 @media (min-width: $desktop-width) {
@@ -56,9 +61,8 @@
     background: #68b738 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
     width: 245px;
     height: 289px;
-    position: absolute;
-    right: 40px;
     margin-top: 48px;
+    margin-right: 9px;
 
     &::before {
       content: "";
@@ -71,9 +75,10 @@
     }
 
     &__text {
-      margin-top: 186px;
-      margin-left: 32px;
-      width: 180px;
+      padding-top: 170px;
+      padding-left: 33px;
+      text-align: center;
+      width: 210px;
     }
   }
 }

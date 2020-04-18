@@ -29,6 +29,18 @@
 @media (min-width: $tablet-width) {
   .main-example {
     background-color: #ffffff;
+    position: relative;
+    margin-bottom: 46px;
+    &::before{
+      position: absolute;
+      content: "";
+      height: 461px;
+      width: 100%;
+      left: 0;
+      bottom: 0px;
+    background-image: linear-gradient(to right, #f2f2f2 calc(50%), #eaeaea calc(50%) );
+
+    }
   }
 
   .main-example__title {
@@ -45,6 +57,19 @@
   }
 }
 @media (min-width: $desktop-width) {
+  .main-example{
+    &::before{
+      position: absolute;
+      content: "";
+      height: 461px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    background-image: linear-gradient(to right, #f2f2f2 calc(50% + 325px), #eaeaea calc(50% + 325px) );
+
+
+  }
+}
   .main-example__wrapper {
     display: flex;
   }

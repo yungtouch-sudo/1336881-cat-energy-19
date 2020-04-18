@@ -253,28 +253,28 @@
   .product-list--1::after {
     width: 100px;
     height: 100px;
-    display: none;
+    top: 47px;
+    left: 51px;
   }
 
   .product-list--1::before {
     width: 71px;
     height: 97px;
-    display: none;
+    top: 41px;
+    left: 66px;
   }
 
   .product-list--2::after {
     width: 100px;
     height: 100px;
-    top: 0;
-    left: 0;
-    display: none;
+    top: 47px;
+    left: 54px;
   }
 
   .product-list--2::before {
     width: 134px;
     height: 57px;
-    top: 0;
-    left: 0;
-    display: none;
+    top: 69px;
+    left: 35px;
   }
 }
