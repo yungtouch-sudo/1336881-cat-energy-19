@@ -10,25 +10,29 @@
 
 <body>
   <header class="page-header container-fix">
-    <a class="page-header__logo">
-      <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />
-    </a>
-    <nav class="main-nav">
-      <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт энерджи" />
+        <!--  <img class="page-header__logo-icon" src="img/logo-tablet.svg" width="174" height="59" alt="Кэт энерджи" />-->
+        <!--    <img class="page-header__logo-icon" src="img/logo-desktop.svg" width="203" height="60" alt="Кэт энерджи" />-->
+      </a>
+      <nav class="main-nav">
+        <button aria-label="Открыть меню" class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--deskcolor" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--deskcolor href=" catalog.html"">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--deskcolor site-list__item--current">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="page-form">
     <section class="program-selection">
@@ -40,35 +44,35 @@
       </div>
       <form class="user-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-form__section container-fix">
-          <div class="user-form__fieldset-wrapper">
+          <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--1">
             <fieldset class="user-form__fieldset">
-              <p class="user-form__wrap">
-                <label class="user-form__label" for="pet-name">Имя:*</label>
-                <input class="user-form__control" id="pet-name" type="text" name="name" placeholder="Барсик">
+              <p class="user-form__wrap user-form__wrap--name">
+                <label class="user-form__label user-form__label--name" for="pet-name">Имя:*</label>
+                <input class="user-form__control user-form__control--name" id="pet-name" type="text" name="name" placeholder="Барсик">
               </p>
-              <p class="user-form__wrap">
-                <label class="user-form__label" for="pet-weight">Вес (кг):*</label>
-                <input class="user-form__control" id="pet-weight" type="text" name="weight" placeholder="7">
+              <p class="user-form__wrap user-form__wrap--weight">
+                <label class="user-form__label user-form__label--weight" for="pet-weight">Вес (кг):*</label>
+                <input class="user-form__control user-form__control--weight" id="pet-weight" type="text" name="weight" placeholder="7">
               </p>
-              <p class="user-form__wrap">
-                <label class="user-form__label" for="pet-age">Возраст (лет):</label>
-                <input class="user-form__control" id="pet-age" type="text" name="age" placeholder="7">
+              <p class="user-form__wrap user-form__wrap--age">
+                <label class="user-form__label user-form__label--age" for="pet-age">Возраст (лет):</label>
+                <input class="user-form__control user-form__control--age" id="pet-age" type="text" name="age" placeholder="7">
               </p>
             </fieldset>
           </div>
-          <div class="user-form__fieldset-wrapper">
+          <div class="user-form__fieldset-wrapper user-form__fieldset-wrapper--2">
             <fieldset class="user-form__fieldset">
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="radio" id="slimming" name="pet-program" value="slimming" checked>
-                <label class="user-form__label" for="slimming">Похудение</label>
+              <p class="user-form__wrap user-form__wrap--radio">
+                <input class="user-form__control user-form__control--slimming visually-hidden" type="radio" id="slimming" name="pet-program" value="slimming" checked>
+                <label class="user-form__label user-form__label--slimming" for="slimming">Похудение</label>
               </p>
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="radio" id="upweight" name="pet-program" value="upweight">
-                <label class="user-form__label" for="upweight">Набор массы</label>
+              <p class="user-form__wrap user-form__wrap--radio">
+                <input class="user-form__control user-form__control--upweight visually-hidden" type="radio" id="upweight" name="pet-program" value="upweight">
+                <label class="user-form__label user-form__label--upweight" for="upweight">Набор массы</label>
               </p>
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="radio" id="userhelp" name="pet-program" value="userhelp">
-                <label class="user-form__label" for="userhelp">Не знаю (Нужен ваш совет)</label>
+              <p class="user-form__wrap user-form__wrap--radio">
+                <input class="user-form__control user-form__control--userhelp visually-hidden" type="radio" id="userhelp" name="pet-program" value="userhelp">
+                <label class="user-form__label user-form__label--userhelp" for="userhelp">Не знаю (Нужен ваш совет)</label>
               </p>
             </fieldset>
           </div>
@@ -82,51 +86,63 @@
             </div>
           </div>
           <div class="user-form__container container-fix">
-            <div class="user-form__wrap">
-              <label class="user-form__label" for="user-email">E-mail:*</label>
-              <input class="user-form__control" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
+            <div class="user-form__wrap user-form__wrap--email">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="user-form__mail-icon" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;"
+                xml:space="preserve">
+                <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
+              </svg>
+              <label class="user-form__label user-form__label--email" for="user-email">E-mail:*</label>
+              <input class="user-form__control user-form__control--email" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
             </div>
-            <div class="user-form__wrap">
-              <label class="user-form__label" for="user-phone">Телефон:*</label>
-              <input class="user-form__control" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+            <div class="user-form__wrap user-form__wrap--phone">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="user-form__phone-icon" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;"
+                xml:space="preserve">
+                <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
+                <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                C7.8,20,8.1,19.7,8.1,19.4z" />
+              </svg>
+              <label class="user-form__label user-form__label--phone" for="user-phone">Телефон:*</label>
+              <input class="user-form__control user-form__control--phone" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>
         <fieldset class="user-form__fieldset ">
           <div class="user-form__wrap user-form__fieldset--line-label">
             <div class="user-form__title-wrap container-fix">
-              <label class="user-form__title" for="user-comment">Комментарий</label>
+              <label class="user-form__title user-form__title--comment" for="user-comment">Комментарий</label>
             </div>
             <div class="user-form__control-container container-fix">
-              <textarea class="user-form__control" id="user-comment" name="comment" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="user-form__control user-form__control--textarea" id="user-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
         </fieldset>
-        <fieldset class="user-form__fieldset user-form__fieldset--line">
+        <fieldset class="user-form__fieldset user-form__fieldset--still user-form__fieldset--line">
           <div class="user-form__title-wrap container-fix">
-            <p class="user-form__title ">
+            <p class="user-form__title user-form__title--still">
               Дополнительно
             </p>
           </div>
           <div class="user-form__container container-fix">
             <div class="user-form__wrapper">
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="checkbox" name="sweetener" id="add-sweetener">
-                <label class="user-form__label" for="add-sweetener">Сахарозаменитель</label>
+              <p class="user-form__wrap user-form__wrap--sweetener">
+                <input class="user-form__control user-form__control--sweetener visually-hidden" type="checkbox" name="sweetener" id="add-sweetener">
+                <label class="user-form__label user-form__label--sweetener" for="add-sweetener">Сахарозаменитель</label>
               </p>
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="checkbox" name="water" id="add-water">
-                <label class="user-form__label" for="add-water">Питьевая вода</label>
+              <p class="user-form__wrap user-form__wrap--water">
+                <input class="user-form__control user-form__control--water visually-hidden" type="checkbox" name="water" id="add-water">
+                <label class="user-form__label user-form__label--water" for="add-water">Питьевая вода</label>
               </p>
             </div>
             <div class="user-form__wrapper">
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="checkbox" name="milk" id="add-milk">
-                <label class="user-form__label" for="add-milk">Молоко</label>
+              <p class="user-form__wrap user-form__wrap--milk">
+                <input class="user-form__control user-form__control--milk visually-hidden" type="checkbox" name="milk" id="add-milk">
+                <label class="user-form__label user-form__label--milk" for="add-milk">Молоко</label>
               </p>
-              <p class="user-form__wrap">
-                <input class="user-form__control" type="checkbox" name="vitamins" id="add-vitamins">
-                <label class="user-form__label" for="add-vitamins">Витамины</label>
+              <p class="user-form__wrap user-form__wrap--vitamins">
+                <input class="user-form__control user-form__control--vitamins visually-hidden" type="checkbox" name="vitamins" id="add-vitamins">
+                <label class="user-form__label user-form__label--vitamins" for="add-vitamins">Витамины</label>
               </p>
             </div>
           </div>
@@ -145,16 +161,16 @@
           приглашаем к&nbspсотрудничеству дилеров!
         </p>
         <div class="user-invite__wrapper">
-        <p class="user-invite__geo">
-          ул. Большая Конюшенная, д. 19/8
-        </p>
-        <p class="user-invite__geo user-invite__geo--sity">Санкт-Петербург</p>
-      </div>
+          <p class="user-invite__geo">
+            ул. Большая Конюшенная, д. 19/8
+          </p>
+          <p class="user-invite__geo user-invite__geo--sity">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="page-footer__wrap">
-      <!--   <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">-->
-      <!--  <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">-->
-       <img class="page-footer__map" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
+        <!--   <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">-->
+        <!--  <img class="page-footer__map" src="img/bg-map-tablet@1x.png" width="767" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">-->
+        <img class="page-footer__map" src="img/bg-map-desktop@1x.png" width="1440" height="400" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
         <!-- <iframe>MAP</iframe> -->
       </div>
     </div>
@@ -166,9 +182,9 @@
         <ul class="page-footer__social social">
           <li class="social__items">
             <a aria-label="В контакте" class="social__link" href="#">
-              <svg version="1.1" id="Layer_1" class="social__image--vk" alt="Логотип В контакте" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
-              <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
+              <svg version="1.1" id="Layer_1" class="social__image--vk" alt="Логотип В контакте" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12"
+                style="enable-background:new 0 0 22 12;" xml:space="preserve">
+                <path d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
                 c0,0.1,0,0.6-0.3,0.9c-0.3,0.3-0.8,0.4-0.9,0.4h-1.4c-0.7,0-3.2-0.2-5.4-2.3C2.5,7.1,0.2,2.2,0.1,2C0,1.6-0.1,1.2,0.2,0.9
                 s0.8-0.4,1-0.4h3.1c0.1,0,0.4,0.1,0.7,0.3C5.3,1,5.4,1.3,5.5,1.4c0.7,1.5,1.5,2.8,2.6,4C8.2,5,8.3,4,8.2,3.1c0-0.4-0.1-0.8-0.2-1
                 C7.9,2,7.7,1.9,7.5,1.9L6.9,1.4c0-0.5,0.5-0.9,0.9-1.1C8.3,0.1,9.1,0,10.1,0h0.5c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5v1.6
@@ -180,45 +196,50 @@
                 c-1.4,2.1-2,2.4-2.5,2.4c-0.1,0-0.3,0-0.4-0.1c-0.7-0.4-0.7-1.4-0.7-2.1V3.9V2.6c0.1-1.3,0-1.3-0.3-1.4c-0.3-0.1-0.5-0.1-1.4-0.1H10
                 c-0.5,0-1,0-1.4,0.1l0.2,0.2c0.4,0.5,0.4,1.5,0.4,1.7c0.1,1.3,0,2.9-0.7,3.3c-0.1,0-0.2,0.1-0.4,0.1C7.5,6.5,6.8,5.8,5.6,4
                 C5,2.9,4.5,1.8,4.5,1.8s0-0.1-0.1-0.1S4.2,1.6,4.2,1.6H1.3H1.2c0.4,0.9,2.5,5,4.8,7.2c2,1.9,4.3,2,4.7,2h1.4c0,0,0.2,0,0.2-0.1v-0.1
-                c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z"/>
+                c0-0.2,0-2,1.2-2.3C13.5,8.3,13.7,8.3,13.7,8.3z" />
               </svg>
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Инстаграмм" class="social__link" alt="Логотип Инстаграмм" href="#">
-              <svg version="1.1" id="Layer_1" class="social__image--insta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
-              <style type="text/css">
-                .st0{fill:#231F20;}
-              </style>
-              <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
-                M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
-              <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
-                s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z"/>
-              <circle class="st0" cx="12.3" cy="3.7" r="0.9"/>
+              <svg version="1.1" id="Layer_1" class="social__image--insta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;"
+                xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #231F20;
+                  }
+                </style>
+                <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
+                M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z" />
+                <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
+                s1.8,4.1,4.1,4.1s4.1-1.8,4.1-4.1S10.3,3.9,8,3.9z" />
+                <circle class="st0" cx="12.3" cy="3.7" r="0.9" />
               </svg>
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Фейсбук" class="social__link" href="#">
-              <svg version="1.1" id="Layer_1" class="social__image--fb" alt="Логотип Фейсбук" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
-              <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
+              <svg version="1.1" id="Layer_1" class="social__image--fb" alt="Логотип Фейсбук" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;"
+                xml:space="preserve">
+                <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                 h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
-                z"/>
+                z" />
               </svg>
             </a>
           </li>
         </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="#">
-          <p class="copyright__text">
-            HTML Academy
-          </p>
-          <svg xmlns="http://www.w3.org/2000/svg" class="copyright__image" width="42" height="50" viewBox="0 0 60 60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
-        </a>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="#">
+            <p class="copyright__text">
+              HTML Academy
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="copyright__image" width="42" height="50" viewBox="0 0 60 60">
+              <path fill="#666666"
+                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+              </svg>
+          </a>
+        </div>
       </div>
-    </div>
     </div>
   </footer>
 </body>

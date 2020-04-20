@@ -6,7 +6,6 @@
 .main-nav__toggle {
   width: 25px;
   height: 19px;
-  //border: none;
   background-color: transparent;
   position: absolute;
   top: -44px;
@@ -34,12 +33,13 @@
     width: 523px;
   }
 }
-@media (min-width: $desktop-width){
-  .main-nav{
+@media (min-width: $desktop-width) {
+  .main-nav {
     z-index: 1;
     margin: 0;
   }
-  .main-nav__wrapper{
+
+  .main-nav__wrapper {
     padding-top: 31px;
   }
 }
