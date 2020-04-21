@@ -1,5 +1,5 @@
 .user-form {
-  margin-top: 21px;
+  margin-top: 25px;
 }
 
 .user-form__section {
@@ -124,12 +124,17 @@
 }
 
 .user-form__wrap {
-  height: 45px;
+  min-height: 45px;
 
-  &--radio {
+  &- {
     padding-top: 24px;
     margin: 0;
   }
+}
+
+.user-form__wrap--evidence {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .user-form__control {
@@ -215,12 +220,13 @@
 }
 
 .user-form__fieldset-wrapper--1 {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 .user-form__fieldset-wrapper--2 {
   border: solid 1px #ededed;
-  padding-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 7px;
 }
 
 .user-form__fieldset {
@@ -265,8 +271,9 @@
   height: 45px;
 }
 
-.user-form__wrap--email {
-  padding-top: 5px;
+.user-form__wrap--userdata {
+  padding-bottom: 14px;
+  padding-top: 1px;
   position: relative;
 }
 
@@ -276,15 +283,15 @@
 
 .user-form__mail-icon {
   position: absolute;
-  top: 20px;
+  top: 18px;
   right: 17px;
   width: 18px;
   height: 14px;
 }
 
 .user-form__wrap--phone {
-  margin-top: 19px;
-  margin-bottom: 27px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   position: relative;
 }
 
@@ -294,10 +301,14 @@
 
 .user-form__phone-icon {
   position: absolute;
-  top: 12px;
+  top: 14px;
   right: 13px;
   width: 21px;
   height: 21px;
+}
+
+.user-form__fieldset--comment {
+  margin-top: 14px;
 }
 
 .user-form__control--textarea {
@@ -308,8 +319,8 @@
   resize: none;
 }
 
-.user-form__fieldset--still {
-  margin-top: 165px;
+.user-form__wrapper--2 {
+  margin-top: -6px;
 }
 
 .user-form__title--still {
@@ -320,32 +331,18 @@
   padding-right: 20px;
 }
 
-.user-form__wrap--sweetener {
+.user-form__wrap--product {
   height: 19px;
-  padding-top: 8px;
+  margin: 0;
+  padding-top: 7px;
   padding-left: 45px;
   position: relative;
 }
 
-.user-form__wrap--water {
-  height: 19px;
-  padding-top: 18px;
-  padding-left: 44px;
-  position: relative;
-}
-
-.user-form__wrap--milk {
-  height: 19px;
-  padding-top: 27px;
-  padding-left: 45px;
-  position: relative;
-}
-
-.user-form__wrap--vitamins {
-  height: 19px;
-  padding-top: 29px;
-  padding-left: 45px;
-  position: relative;
+.user-form__wrap--radio {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .user-form__control--sweetener + label::after {
@@ -384,7 +381,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 13px;
+  top: 0;
   left: -1px;
 }
 
@@ -394,7 +391,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 13px;
+  top: 0;
   left: -1px;
 }
 
@@ -404,7 +401,7 @@
   width: 22px;
   height: 17px;
   background: url("../img/icon-tick.svg") no-repeat;
-  top: 20px;
+  top: 7px;
   left: 3px;
 }
 
@@ -414,7 +411,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 22px;
+  top: 3px;
   left: -1px;
 }
 
@@ -424,7 +421,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 22px;
+  top: 3px;
   left: -1px;
 }
 
@@ -434,7 +431,7 @@
   width: 22px;
   height: 17px;
   background: url("../img/icon-tick.svg") no-repeat;
-  top: 28px;
+  top: 9px;
   left: 3px;
 }
 
@@ -444,7 +441,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 22px;
+  top: 0;
   left: -1px;
 }
 
@@ -454,7 +451,7 @@
   width: 30px;
   height: 30px;
   border: solid 1px #cdcdcd;
-  top: 22px;
+  top: 0;
   left: -1px;
 }
 
@@ -464,12 +461,12 @@
   width: 22px;
   height: 17px;
   background: url("../img/icon-tick.svg") no-repeat;
-  top: 28px;
+  top: 7px;
   left: 3px;
 }
 
 .user-form__send-container {
-  margin-top: 44px;
+  margin-top: 19px;
 }
 @media (min-width: $tablet-width) {
   .user-form__wrapper {
@@ -499,25 +496,30 @@
     }
   }
 
+  .user-form__wrap--evidence {
+    margin-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  .user-form__fieldset--comment {
+    margin-top: 24px;
+  }
+
   .user-form__fieldset-wrapper--1 {
     padding-left: 70px;
-    padding-top: 31px;
+    padding-top: 30px;
   }
 
   .user-form__fieldset-wrapper--2 {
-    margin-top: 91px;
     margin-left: 70px;
     margin-right: 67px;
-    padding-bottom: 49px;
-    padding-top: 9px;
+    padding-top: 17px;
+    margin-top: 58px;
+    padding-bottom: 26px;
   }
 
-  .user-form__wrap--weight {
-    padding-top: 13px;
-  }
-
-  .user-form__wrap--age {
-    padding-top: 26px;
+  .user-form__container {
+    margin-top: 49px;
   }
 
   .user-form__label--weight {
@@ -611,7 +613,7 @@
     line-height: 1;
     width: 590px;
     padding-left: 37px;
-    margin-top: 75px;
+    margin-top: 71px;
 
     &-wrap {
       padding-left: 30px;
@@ -619,7 +621,25 @@
   }
 
   .user-form__fieldset--line::before {
-    top: 98px;
+    top: 94px;
+  }
+
+  .user-form__wrapper--1 {
+    justify-content: space-between;
+    width: 554px;
+    margin-left: 25px;
+    padding-top: 11px;
+  }
+
+  .user-form__wrapper--2 {
+    justify-content: space-between;
+    margin-left: 26px;
+    margin-top: 27px;
+    width: 515px;
+  }
+
+  .user-form__wrap--product {
+    padding-left: 70px;
   }
 
   .user-form__wrap--email {
@@ -628,7 +648,7 @@
   }
 
   .user-form__label--email {
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
   .user-form__control--email {
@@ -638,11 +658,10 @@
   }
 
   .user-form__wrap--phone {
-    margin-top: 63px;
+    margin-top: 0;
   }
 
   .user-form__label--phone {
-    padding-left: 36px;
     margin-right: 13px;
   }
 
@@ -652,13 +671,20 @@
   }
 
   .user-form__mail-icon {
-    top: 54px;
+    top: 44px;
     right: 57px;
   }
 
   .user-form__phone-icon {
-    top: 16px;
+    top: 42px;
     right: 54px;
+  }
+
+  .user-form__wrap--userdata {
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-top: -5px;
+    padding-left: 37px;
   }
 
   .user-form__fieldset--line-label {
@@ -681,7 +707,7 @@
   }
 
   .user-form__fieldset--still {
-    margin-top: 231px;
+    margin-top: -7px;
   }
 
   .user-form__title--still {
@@ -711,90 +737,90 @@
   .user-form__control--sweetener + label::after {
     width: 40px;
     height: 40px;
-    top: 11px;
-    left: 38px;
+    top: -2px;
+    left: 13px;
   }
 
   .user-form__control--sweetener:checked + label::after {
     width: 40px;
     height: 40px;
-    top: 11px;
-    left: 38px;
+    top: -2px;
+    left: 13px;
   }
 
   .user-form__control--sweetener:checked + label::before {
     width: 21px;
     height: 16px;
-    top: 23px;
-    left: 48px;
+    top: 10px;
+    left: 23px;
   }
 
   .user-form__control--water + label::after {
     width: 40px;
     height: 40px;
-    top: 11px;
-    left: 113px;
+    top: -2px;
+    left: 13px;
   }
 
   .user-form__control--water:checked + label::after {
     width: 40px;
     height: 40px;
-    top: 11px;
-    left: 113px;
+    top: -2px;
+    left: 13px;
   }
 
   .user-form__control--water:checked + label::before {
     width: 21px;
     height: 16px;
-    top: 23px;
-    left: 123px;
+    top: 11px;
+    left: 22px;
   }
 
   .user-form__control--milk + label::after {
     width: 40px;
     height: 40px;
-    top: 34px;
-    left: 38px;
+    top: -2px;
+    left: 12px;
   }
 
   .user-form__control--milk:checked + label::after {
     width: 40px;
     height: 40px;
-    top: 34px;
-    left: 38px;
+    top: -2px;
+    left: 12px;
   }
 
   .user-form__control--milk:checked + label::before {
     width: 21px;
     height: 16px;
-    top: 47px;
-    left: 48px;
+    top: 11px;
+    left: 23px;
   }
 
   .user-form__control--vitamins + label::after {
     width: 40px;
     height: 40px;
-    top: 34px;
-    left: 208px;
+    top: -2px;
+    left: 11px;
   }
 
   .user-form__control--vitamins:checked + label::after {
     width: 40px;
     height: 40px;
-    top: 34px;
-    left: 208px;
+    top: -2px;
+    left: 11px;
   }
 
   .user-form__control--vitamins:checked + label::before {
     width: 21px;
     height: 16px;
-    top: 47px;
-    left: 218px;
+    top: 11px;
+    left: 21px;
   }
 
   .user-form__send-container {
     display: flex;
-    margin-top: 72px;
+    margin-top: 48px;
   }
 
   .user-form__btn {
@@ -849,23 +875,46 @@
   .user-form__title {
     width: 590px;
     padding-left: 37px;
-    margin-top: 69px;
+    margin-top: 42px;
+  }
+
+  .user-form__wrapper--1 {
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 531px;
+    margin-top: 10px;
+    margin-right: 65px;
+  }
+
+
+
+  .user-form__wrap--product {
+    padding-left: 66px;
   }
 
   .user-form__fieldset--line::before {
-    top: 91px;
+    top: 96px;
+  }
+
+  .user-form__wrap--userdata {
+    padding-left: 9px;
+    width: 593px;
   }
 
   .user-form__container {
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    & div:nth-child(2n){
+      margin-left: 54px;
+    }
   }
-
-  .user-form__wrap--email {
-    display: block;
-    padding-top: 34px;
-    padding-left: 9px;
+  .user-form__wrapper--2 {
+    padding: 0;
+    width: 491px;
+    margin-top: 10px;
   }
-
   .user-form__label--email {
     margin-right: 18px;
     padding-top: 15px;
@@ -876,13 +925,8 @@
   }
 
   .user-form__mail-icon {
-    top: 54px;
-    right: 20px;
-  }
-
-  .user-form__wrap--phone {
-    display: block;
-    margin: 0;
+    top: 42px;
+    right: 34px;
   }
 
   .user-form__label--phone {
@@ -893,22 +937,17 @@
     width: 472px;
   }
 
-  .user-form__wrap--phone {
-    margin-left: 79px;
-    padding-top: 34px;
-  }
-
   .user-form__phone-icon {
-    top: 51px;
-    right: 18px;
+    top: 39px;
+    right: 30px;
   }
 
   .user-form__fieldset--line-label {
-    margin-top: 107px;
+    margin-top: 41px;
   }
 
   .user-form__fieldset--line-label::before {
-    top: 130px;
+    top: 64px;
   }
 
   .user-form__title-wrap {
@@ -916,7 +955,7 @@
   }
 
   .user-form__title--comment {
-    padding-left: 6px;
+    padding-left: 37px;
   }
 
   .user-form__control--textarea {
@@ -925,13 +964,9 @@
     margin-left: 7px;
   }
 
-  .user-form__fieldset--line::before {
-    top: 91px;
-  }
-
   .user-form__title--still {
-    margin-top: 77px;
-    width: 260px;
+    margin-top: 74px;
+    width: 289px;
   }
 
   .user-form__wrap--sweetener {
@@ -962,50 +997,50 @@
   }
 
   .user-form__control--sweetener:checked + label::before {
-    top: 23px;
+    top: 10px;
     left: 18px;
   }
 
   .user-form__control--water + label::after {
-    left: 96px;
+    left: 7px;
   }
 
   .user-form__control--water:checked + label::after {
-    left: 96px;
+    left: 7px;
   }
 
   .user-form__control--water:checked + label::before {
-    left: 106px;
+    left: 18px;
   }
 
   .user-form__control--milk + label::after {
-    top: 11px;
-    left: 128px;
+    top: -2px;
+    left: 8px;
   }
 
   .user-form__control--milk:checked + label::after {
-    top: 11px;
-    left: 128px;
+    top: -2px;
+    left: 8px;
   }
 
   .user-form__control--milk:checked + label::before {
-    left: 138px;
-    top: 23px;
+    left: 19px;
+    top: 11px;
   }
 
   .user-form__control--vitamins + label::after {
-    top: 11px;
-    left: 189px;
+    top: -2px;
+    left: 8px;
   }
 
   .user-form__control--vitamins:checked + label::after {
-    top: 11px;
-    left: 189px;
+    top: -2px;
+    left: 8px;
   }
 
   .user-form__control--vitamins:checked + label::before {
-    left: 199px;
-    top: 23px;
+    left: 18px;
+    top: 12px;
   }
 
   .user-form__btn {
