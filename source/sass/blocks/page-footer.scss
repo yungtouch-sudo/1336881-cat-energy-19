@@ -188,15 +188,17 @@
   }
 
   .page-footer__copyright {
-    margin-right: 2px;
+    margin-right: 32px;
     padding-top: 1px;
   }
 
   .page-footer__backcolor {
-    padding-left: 30px;
-    padding-right: 30px;
     min-height: 150px;
     padding-top: 40px;
     margin-top: -8px;
   }
+  .page-footer__logo{
+    margin-left: 31px;
+  }
+
 }
