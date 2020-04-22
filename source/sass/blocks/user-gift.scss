@@ -3,6 +3,7 @@
   width: auto;
   height: 289px;
   position: relative;
+  margin-top: 42px;
 
   &::before {
     content: "";
@@ -10,8 +11,8 @@
     background: url("../img/icon-gift.svg") no-repeat;
     width: 56px;
     height: 61px;
-    top: 0;
-    left: 0;
+    top: 65px;
+    left: 113px;
   }
 }
 
@@ -21,6 +22,9 @@
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
+width: 230px;
+padding-top: 184px;
+padding-left: 49px;
 }
 
 .user-form__fieldset {
@@ -31,6 +35,7 @@
     background: #68b738 url("../img/gift-photo-tablet@1x.jpg") no-repeat;
     width: auto;
     height: 200px;
+    margin-top: 68px;
     position: relative;
 
     &::before {
@@ -39,17 +44,25 @@
       background: url("../img/icon-gift.svg") no-repeat;
       width: 56px;
       height: 61px;
-      top: 0;
-      left: 0;
+      top: 64px;
+      left: 91px;
     }
+  }
+
+  .user-gift__text {
+    padding-top: 69px;
+    padding-left: 424px;
+    width: 590px;
+    text-align: left;
   }
 }
 @media (min-width: $desktop-width) {
   .user-gift {
     background: #68b738 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
-    width: auto;
+    width: 245px;
     height: 289px;
-    position: relative;
+    margin-top: 48px;
+    margin-right: 9px;
 
     &::before {
       content: "";
@@ -57,8 +70,15 @@
       background: url("../img/icon-gift.svg") no-repeat;
       width: 56px;
       height: 61px;
-      top: 0;
-      left: 0;
+      top: 64px;
+      left: 96px
+    }
+
+    &__text {
+      padding-top: 170px;
+      padding-left: 33px;
+      text-align: center;
+      width: 210px;
     }
   }
 }

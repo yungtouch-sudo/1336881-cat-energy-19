@@ -7,5 +7,21 @@
 }
 
 .copyright__link {
+  display: inline-flex;
   text-decoration: none;
+}
+
+.copyright__image {
+  margin-left: 130px;
+}
+@media (min-width: $tablet-width) {
+  .copyright__image {
+    margin-left: 14px;
+    margin-top: 10px;
+  }
+
+  .copyright__text {
+    padding-top: 9px;
+    width: 115px;
+  }
 }

@@ -1,0 +1,53 @@
+.user-expenses__image {
+  max-width: 311px;
+  margin-left: -15px;
+}
+
+.user-expenses__wrapper {
+  margin-top: 25px;
+}
+@media (min-width: $tablet-width) {
+  .user-expenses {
+    padding-bottom: 75px;
+    position: relative;
+    margin-top: 250px;
+    margin-left: -30px;
+    margin-right: -30px;
+    min-height: 462px;
+    height: 462px;
+  }
+
+  .user-expenses__wrapper {
+    margin-top: 244px;
+  }
+
+  .user-expenses__image {
+    max-width: 690px;
+    margin-left: 44px;
+    margin-top: -169px;
+  }
+
+}
+@media (min-width: $desktop-width) {
+  .user-expenses {
+    display: block;
+    margin-top: 67px;
+    margin-left: 33px;
+    padding-bottom: 73px;
+    background-color: transparent;
+  position: relative;
+    z-index: 1;
+  }
+
+  .user-expenses__wrapper {
+    margin-top: -22px;
+    margin-left: 70px;
+    margin-bottom: 25px;
+    width: 690px;
+    height: 517px;
+  }
+
+  .user-expenses__image {
+    margin-left: 36px;
+  }
+}

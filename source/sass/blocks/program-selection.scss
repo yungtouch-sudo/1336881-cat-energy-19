@@ -5,4 +5,39 @@
   text-transform: uppercase;
   text-align: left;
   color: #111111;
+  width: 240px;
+}
+
+.program-selection__title {
+  margin-top: 27px;
+  margin-bottom: 28px;
+}
+@media (min-width: $tablet-width) {
+  .program-selection {
+    margin-bottom: 103px;
+  }
+.program-selection__container{
+  padding-top: 9px;
+}
+  .program-selection__text {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 370px;
+    padding-top: 30px;
+    padding-left: 40px;
+  }
+}
+@media (min-width: $desktop-width){
+  .program-selection__container{
+    padding-top: 0px;
+  }
+.program-selection__title{
+  margin-top: 46px;
+}
+.program-selection__text{
+  padding-left: 10px;
+}
+.program-selection{
+  margin-bottom: 114px;
+}
 }
