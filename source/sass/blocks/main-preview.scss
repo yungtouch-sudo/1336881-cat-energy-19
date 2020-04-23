@@ -9,6 +9,10 @@
   height: 305px;
   background-position: center;
   margin: 0 auto;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px;
+  }
 }
 
 .main-preview__title {
@@ -34,6 +38,14 @@
   text-align: center;
   background-color: #68b738;
   color: #ffffff;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .main-preview__text {
@@ -59,12 +71,9 @@
     line-height: 1;
     text-align: left;
     color: #111111;
-
     width: 510px;
     padding-left: 86px;
     padding-top: 22px;
-
-
   }
 
   .main-preview__text {
@@ -74,7 +83,6 @@
     text-transform: uppercase;
     text-align: left;
     color: #111111;
-
     padding-left: 89px;
   }
 
@@ -84,24 +92,27 @@
     left: calc(50% - 355px);
     z-index: -1;
   }
-  .main-preview__link{
+
+  .main-preview__link {
     font-size: 20px;
     width: 245px;
-
     padding-top: 14px;
     padding-bottom: 13px;
     margin-left: 89px;
     margin-top: 18px;
-
   }
 }
 @media (min-width: $desktop-width) {
   .main-preview__background {
-   background-image:  url("../img/index-background-desktop@1x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%) ;
+    background-image: url("../img/index-background-desktop@1x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%);
     margin-top: -139px;
     padding-top: 80px;
     height: 696px;
-       background-position: left calc(50% + 360px)  top 0, left 0 top 0;
+    background-position: left calc(50% + 360px) top 0, left 0 top 0;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+background-image: url("../img/index-background-desktop@2x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+      background-size: 720px 696px,100%;
+    }
   }
 
   .main-preview__image {
@@ -110,11 +121,13 @@
     left: calc(50% - 161px);
     z-index: 1;
   }
-  .main-preview__title{
+
+  .main-preview__title {
     padding-left: 89px;
-padding-top: 102px;
+    padding-top: 102px;
   }
-  .main-preview__link{
+
+  .main-preview__link {
     margin-top: 22px;
   }
 }

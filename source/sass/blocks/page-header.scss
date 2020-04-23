@@ -1,4 +1,9 @@
 .page-header {
+  padding-left: 0;
+padding-right: 0;
+&__logo{
+  padding-left: 20px;
+}
   &__logo-icon {
     width: 191px;
     height: 39px;
@@ -14,8 +19,15 @@
     align-items: center;
 
     &__logo {
-      width: 174px;
+      width: auto;
       padding-top: 14px;
+      padding-left: 30px;
+      &:hover{
+        opacity: 0.8;
+      }
+      &:active{
+        opacity: 0.6;
+      }
     }
 
     &__logo-icon {
@@ -32,8 +44,8 @@
   .page-header__logo {
     z-index: 1;
     padding-top: 31px;
-    padding-left: 10px;
-    width: 212px;
+    padding-left: 34px;
+    width: auto;
     padding-top: 49px;
 
     &-icon {

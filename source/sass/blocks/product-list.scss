@@ -48,6 +48,20 @@
     top: 7px;
     left: 116px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-list__link:hover::before {
+  content: "";
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  width: 34px;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  left: 116px;
 }
 
 .product-list--1 {
@@ -78,15 +92,17 @@
   }
 
   & p {
-    width: 255px;
-    padding-top: 15px;
-    padding-left: 18px;
-    padding-bottom: 27px;
+    width: 243px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 28px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
 .product-list--2 {
-  padding-top: 25px;
+  padding-top: 23px;
 
   &::after {
     content: "";
@@ -112,10 +128,12 @@
   }
 
   & p {
-    width: 230px;
-    padding-top: 14px;
-    padding-left: 18px;
-    padding-bottom: 27px;
+    width: 243px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 28px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 @media (min-width: $tablet-width) {
@@ -151,8 +169,18 @@
       height: 12px;
       position: absolute;
       top: 9px;
-      left: 180px;
+      left: 181px;
     }
+  }
+
+  .product-list__link:hover::before {
+    content: "";
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    width: 34px;
+    height: 12px;
+    position: absolute;
+    top: 9px;
+    left: 181px;
   }
 
   .product-list--1 {
@@ -183,10 +211,12 @@
     }
 
     & p {
-      width: 430px;
+      width: 408px;
       padding-top: 9px;
-      padding-left: 52px;
+      padding-left: 35px;
       padding-bottom: 40px;
+      margin-top: 12px;
+      border: 0;
     }
   }
 
@@ -217,10 +247,11 @@
     }
 
     & p {
-      width: 395px;
-      padding-top: 8px;
-      padding-left: 52px;
+      width: 375px;
+      margin-top: 13px;
+      padding-left: 34px;
       padding-bottom: 40px;
+      border: 0;
     }
   }
 }
@@ -236,18 +267,24 @@
     padding-left: 215px;
   }
 
+  .product-list__link {
+    padding-left: 54px;
+  }
+
   .product-list--1 p {
-    width: 535px;
-    padding-top: 58px;
-    padding-left: 52px;
-    padding-bottom: 16px;
+    width: 530px;
+    padding-top: 62px;
+    padding-left: 35px;
+    padding-bottom: 17px;
+    margin-bottom: 16px;
   }
 
   .product-list--2 p {
-    width: 535px;
-    padding-top: 56px;
-    padding-left: 54px;
+    width: 530px;
+    padding-top: 60px;
+    padding-left: 35px;
     padding-bottom: 17px;
+    margin-bottom: 15px;
   }
 
   .product-list--1::after {

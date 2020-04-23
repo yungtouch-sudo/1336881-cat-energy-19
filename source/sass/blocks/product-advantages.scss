@@ -55,6 +55,10 @@
     top: 20px;
     left: -46px;
     z-index: 2;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 50px 50px;
+    }
   }
 }
 
@@ -79,6 +83,10 @@
     top: 24px;
     left: -44px;
     z-index: 2;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 50px 50px;
+    }
   }
 }
 
@@ -103,6 +111,10 @@
     top: 26px;
     left: -46px;
     z-index: 2;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 50px 50px;
+    }
   }
 }
 
@@ -127,6 +139,10 @@
     top: 30px;
     left: -45px;
     z-index: 2;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+      background-size: 50px 50px;
+    }
   }
 }
 @media (min-width: $tablet-width) {
@@ -188,6 +204,10 @@
       top: 74px;
       left: 15px;
       z-index: 2;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+        background-size: 50px 50px;
+      }
     }
   }
 
@@ -226,6 +246,10 @@
       top: 74px;
       left: 140px;
       z-index: 2;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+        background-size: 50px 50px;
+      }
     }
   }
 
@@ -266,6 +290,10 @@
       top: 148px;
       left: 15px;
       z-index: 2;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+        background-size: 50px 50px;
+      }
     }
   }
 
@@ -306,6 +334,10 @@
       top: 149px;
       left: 139px;
       z-index: 2;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 50px 50px;
+      }
     }
   }
 

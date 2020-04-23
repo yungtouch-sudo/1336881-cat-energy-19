@@ -7,17 +7,17 @@
   text-align: left;
   color: #111111;
 }
-@media (min-width: $tablet-width){
-  .great-title{
+@media (min-width: $tablet-width) {
+  .great-title {
     font-size: 60px;
     line-height: 1;
     letter-spacing: normal;
     margin-top: 38px;
   }
 }
-@media (min-width: $desktop-width){
-  .great-title{
-    margin-top: 52px;
-      padding-left: 9px;
+@media (min-width: $desktop-width) {
+  .great-title {
+    margin-top: 50px;
+    padding-left: 9px;
   }
 }

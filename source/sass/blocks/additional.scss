@@ -1,5 +1,5 @@
 .additional {
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 .additional__title {
@@ -8,7 +8,6 @@
   line-height: 1;
   text-align: left;
   font-weight: normal;
-  border-bottom: 1px solid tomato;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 32px;
@@ -32,6 +31,14 @@
 
 .additional__title-wrapper {
   padding-left: 0;
+}
+
+.additional__wrapper {
+  margin-top: 0;
+
+  &:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .additional-items__unit {
@@ -72,7 +79,7 @@
     }
 
     &-wrap--line::before {
-      top: 22px;
+      top: 24px;
     }
   }
 }
@@ -89,8 +96,9 @@
   .additional__title {
     padding-left: 9px;
     padding-top: 10px;
-    margin-top:28px ;
+    margin-top: 31px;
     width: 384px;
+
     &-wrap--line::before {
       top: 32px;
     }
