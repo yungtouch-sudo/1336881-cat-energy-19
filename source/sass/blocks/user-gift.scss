@@ -4,6 +4,11 @@
   height: 289px;
   position: relative;
   margin-top: 42px;
+  margin-bottom: -4px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px;
+  }
 
   &::before {
     content: "";
@@ -22,9 +27,9 @@
   line-height: 1.25;
   text-align: center;
   color: #ffffff;
-width: 230px;
-padding-top: 184px;
-padding-left: 49px;
+  width: 230px;
+  padding-top: 184px;
+  padding-left: 49px;
 }
 
 .user-form__fieldset {
@@ -36,7 +41,12 @@ padding-left: 49px;
     width: auto;
     height: 200px;
     margin-top: 68px;
+    margin-bottom: 0;
     position: relative;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 708px;
+    }
 
     &::before {
       content: "";
@@ -63,6 +73,10 @@ padding-left: 49px;
     height: 289px;
     margin-top: 48px;
     margin-right: 9px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 246px;
+    }
 
     &::before {
       content: "";
@@ -71,7 +85,7 @@ padding-left: 49px;
       width: 56px;
       height: 61px;
       top: 64px;
-      left: 96px
+      left: 96px;
     }
 
     &__text {

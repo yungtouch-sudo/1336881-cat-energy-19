@@ -1,31 +1,44 @@
 .page-footer {
-  margin-top: 48px;
+  margin-top: 36px;
 }
-
+.page-footer__google-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+}
 .page-footer__container {
   padding-left: 0;
   padding-right: 0;
+  &-lower{
+    padding-left: 0px;
+  }
 }
 
 .page-footer__backcolor {
   background-color: #f2f2f2;
-  padding-top: 38px;
+  padding-top: 26px;
+  min-height: 242px;
 }
 
 .page-footer__social {
   display: flex;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  padding-top: 24px;
-  padding-bottom: 22px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding-top: 22px;
   padding-left: 20px;
-  margin-top: 26px;
+  padding-bottom: 22px;
   margin-bottom: 12px;
+  margin-left: 21px;
+  margin-top: 30px;
   justify-content: start;
+  width: 278px;
 }
 
 .page-footer__map {
   max-width: 320px;
+  margin-top: -11px;
 }
 
 .page-footer__wrap {
@@ -44,8 +57,8 @@
     background-image: url("../img/map-pin-mobile.png");
     width: 55px;
     height: 53px;
-    top: 177px;
-    right: 129px;
+    top: 166px;
+    right: 128px;
     z-index: 1;
   }
 }
@@ -74,6 +87,14 @@
     left: 136px;
   }
 }
+
+.page-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo:active {
+  opacity: 0.6;
+}
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 38px;
@@ -86,27 +107,29 @@
 
   .page-footer__wrap {
     width: 768px;
-    min-height: 465px;
+    min-height: 400px;
     margin-right: auto;
+    margin-top: -6px;
 
     &::before {
       background: url("../img/map-pin-tablet.png") no-repeat;
       width: 113px;
       height: 106px;
-      top: 214px;
+      top: 151px;
       left: 333px;
     }
   }
 
   .page-footer__map {
     max-width: 768px;
-    padding-top: 64px;
+    margin-top: 0;
   }
 
   .page-footer__backcolor {
     display: flex;
     margin-top: 0;
     min-height: 150px;
+    padding-top: 40px;
   }
 
   .page-footer__container-bottom {
@@ -142,16 +165,19 @@
 }
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 114px;
+    padding-top: 0px;
+    margin-top: 0;
   }
 
   .page-footer__wrap {
     width: 100%;
-    height: 457px;
+    height: 434px;
     overflow: hidden;
-    margin-top: -217px;
+    margin-top: 0px;
     z-index: 1;
-    position: relative;
+    position: absolute;
+    top:0;
+    left: 0;
 
     &::before {
       position: absolute;
@@ -159,7 +185,7 @@
       background-image: url("../img/map-pin.png");
       width: 124px;
       height: 106px;
-      top: 207px;
+      top: 149px;
       left: 928px;
       z-index: 1;
     }
@@ -167,12 +193,13 @@
 
   .page-footer__container {
     position: relative;
-    padding: 0;
+    padding-top: 92px;
+padding-left: 41px;
   }
 
   .page-footer__map {
     position: absolute;
-    top: -7px;
+    top: 0;
     left: -70px;
     max-width: inherit;
   }
@@ -193,12 +220,17 @@
   }
 
   .page-footer__backcolor {
+    padding-top: 0;
     min-height: 150px;
-    padding-top: 40px;
-    margin-top: -8px;
-  }
-  .page-footer__logo{
-    margin-left: 31px;
   }
 
+  .page-footer__logo {
+    margin-left: 31px;
+  }
+  .page-footer__container-lower{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    padding-top: 39px;
+  }
 }

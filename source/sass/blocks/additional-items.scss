@@ -1,5 +1,5 @@
 .additional-items {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .additional-items__unit {
@@ -44,6 +44,13 @@
   padding-bottom: 10px;
   margin-bottom: 16px;
   margin-top: 14px;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 @media (min-width: $tablet-width) {
   .additional-items__pack {

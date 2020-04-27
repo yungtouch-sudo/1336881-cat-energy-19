@@ -62,6 +62,12 @@
       margin-top: -7px;
       z-index: 1;
     }
+    &:hover{
+      border-bottom: 1px solid rgba(205, 205, 205, 1);
+    }
+    &:active{
+      border: 0;
+    }
   }
 
   .view-changes {
@@ -84,7 +90,13 @@
       background-color: white;
     }
   }
-
+.view-changes:hover::after{
+  box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.view-changes:active::after{
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+  border: solid 2px #68b738;
+}
   .view-changes__options {
     content: "";
     position: absolute;

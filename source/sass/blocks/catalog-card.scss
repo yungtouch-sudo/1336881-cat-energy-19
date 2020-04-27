@@ -1,5 +1,6 @@
 .catalog-card__wrapper {
   display: flex;
+  padding-left: 20px;
 }
 
 .catalog-card__title {
@@ -9,6 +10,7 @@
   text-transform: uppercase;
   color: #111111;
   margin-bottom: 10px;
+  margin-top: 13px;
   padding-top: 9px;
   width: 75px;
 }
@@ -43,6 +45,15 @@
   padding-top: 11px;
   padding-bottom: 11px;
   display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 22px;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog-card__stats {
@@ -51,12 +62,18 @@
 }
 
 .catalog-card {
-  margin-top: 23px;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: -20px;
+  margin-right: -20px;
 }
-.catalog-card__img{
+
+.catalog-card__img {
   width: 140px;
-height: 144px;
+  height: 144px;
 }
+
 .catalog-card__wrapper ul:first-child {
   margin: 0;
 }
@@ -67,10 +84,14 @@ height: 144px;
     max-height: 431px;
     width: 325px;
     margin-bottom: 36px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 0;
   }
 
   .catalog-card__wrapper {
     display: block;
+    padding-left: 0;
   }
 
   .catalog-card__title {
@@ -79,7 +100,7 @@ height: 144px;
     font-size: 20px;
     line-height: 1;
     margin-left: 94px;
-    padding-top: 14px;
+    padding-top: 24px;
   }
 
   .catalog-card__stats {
@@ -112,34 +133,36 @@ height: 144px;
   .catalog-card__img--500 {
     margin-top: -46px;
     width: 324px;
-height: 172px;
-
+    height: 172px;
   }
 
   .catalog-card__img--1000 {
     margin-top: -81px;
     width: 324px;
-height: 208px;
-
+    height: 208px;
   }
 }
-@media (min-width: $desktop-width){
-  .catalog-card{
+@media (min-width: $desktop-width) {
+  .catalog-card {
     width: 245px;
     min-height: 431px;
     margin-right: 10px;
     margin-left: 10px;
-    &__img--1000{
+
+    &__img--1000 {
       width: 246px;
     }
   }
-  .catalog-card__stats{
+
+  .catalog-card__stats {
     width: 171px;
   }
-  .catalog-card__title{
+
+  .catalog-card__title {
     margin-left: 55px;
   }
-  .catalog-card__link{
+
+  .catalog-card__link {
     width: 168px;
   }
 }
