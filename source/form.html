@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header container-fix">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
         <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -89,14 +94,16 @@
           </div>
           <div class="user-form__container container-fix">
             <div class="user-form__wrap user-form__wrap--userdata">
+              <label class="user-form__label user-form__label--email" for="user-email">E-mail:*</label>
+              <input class="user-form__control user-form__control--email" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="user-form__mail-icon" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;"
                 xml:space="preserve">
                 <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z" />
               </svg>
-              <label class="user-form__label user-form__label--email" for="user-email">E-mail:*</label>
-              <input class="user-form__control user-form__control--email" id="user-email" type="text" name="email" placeholder="kuklachev@gmail.com">
             </div>
             <div class="user-form__wrap user-form__wrap--userdata">
+              <label class="user-form__label user-form__label--phone" for="user-phone">Телефон:*</label>
+              <input class="user-form__control user-form__control--phone" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="user-form__phone-icon" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;"
                 xml:space="preserve">
                 <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
@@ -105,8 +112,6 @@
                 C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
                 C7.8,20,8.1,19.7,8.1,19.4z" />
               </svg>
-              <label class="user-form__label user-form__label--phone" for="user-phone">Телефон:*</label>
-              <input class="user-form__control user-form__control--phone" id="user-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>
@@ -175,10 +180,11 @@
     <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
     <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
   </picture>
+
       </div>
     </div>
     <div class="page-footer__backcolor">
-      <div class="page-footer__container page-footer__container-bottom container-fix">
+      <div class="page-footer__container-lower page-footer__container-bottom container-fix">
         <a href="index.html" class="page-footer__link">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
         </a>

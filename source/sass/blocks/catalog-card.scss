@@ -47,6 +47,13 @@
   display: inline-block;
   margin-left: 20px;
   margin-bottom: 22px;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .catalog-card__stats {

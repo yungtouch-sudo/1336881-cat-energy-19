@@ -30,7 +30,7 @@
   .main-example {
     background-color: #ffffff;
     position: relative;
-    margin-bottom: 46px;
+    margin-bottom: -40px;
 
     &::before {
       position: absolute;
@@ -63,6 +63,7 @@
 }
 @media (min-width: $desktop-width) {
   .main-example {
+    margin-bottom: 0;
     &::before {
       position: absolute;
       content: "";

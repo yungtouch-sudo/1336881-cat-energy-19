@@ -24,6 +24,23 @@
   position: relative;
 }
 
+.user-form__label {
+  &:hover::after {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+/* input error */
+.user-form__control--slimming-error,
+.user-form__control--upweight-error,
+.user-form__control--userhelp-error {
+  border: solid 1px #ff8282;
+  box-shadow: 0 0 0 1px #ff8282;
+}
+
 .user-form__control--slimming + label::after {
   content: "";
   position: absolute;
@@ -35,7 +52,7 @@
   left: -2px;
 }
 
-.user-form__control--slimming:checked + label::after {
+.user-form__control--slimming:checked + label::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -46,7 +63,7 @@
   left: 7px;
 }
 
-.user-form__control--slimming:checked + label::before {
+.user-form__control--slimming:checked + label::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -68,7 +85,7 @@
   left: -2px;
 }
 
-.user-form__control--upweight:checked + label::after {
+.user-form__control--upweight:checked + label::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -79,7 +96,7 @@
   left: 7px;
 }
 
-.user-form__control--upweight:checked + label::before {
+.user-form__control--upweight:checked + label::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -101,7 +118,7 @@
   left: -2px;
 }
 
-.user-form__control--userhelp:checked + label::after {
+.user-form__control--userhelp:checked + label::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -112,7 +129,7 @@
   left: 7px;
 }
 
-.user-form__control--userhelp:checked + label::before {
+.user-form__control--userhelp:checked + label::after {
   content: "";
   position: absolute;
   width: 30px;
@@ -157,7 +174,7 @@
   }
 
   &:focus {
-    border: solid 2px #444444;
+    box-shadow: 0 0 0 1px #444444;
   }
 }
 
@@ -205,6 +222,13 @@
   margin-bottom: 15px;
   width: 280px;
   border: none;
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .user-form__star {
@@ -282,11 +306,38 @@
 .user-form__control--email {
   width: 219px;
   height: 45px;
+
+  &:focus + .user-form__mail-icon {
+    fill: #68b738;
+  }
 }
 
 .user-form__control--phone {
   width: 204px;
   height: 45px;
+
+  &:focus + .user-form__phone-icon {
+    fill: #68b738;
+  }
+}
+/* Input error + icon color */
+
+.user-form__control--email-error {
+  border: solid 1px #ff8282;
+  box-shadow: 0 0 0 1px #ff8282;
+
+  &:focus + .user-form__control--email {
+    fill: #ff8282;
+  }
+}
+
+.user-form__control--phone-error {
+  border: solid 1px #ff8282;
+  box-shadow: 0 0 0 1px #ff8282;
+
+  &:focus + .user-form__control--phone {
+    fill: #ff8282;
+  }
 }
 
 .user-form__wrap--userdata {
@@ -301,7 +352,7 @@
 
 .user-form__mail-icon {
   position: absolute;
-  top: 18px;
+  top: 16px;
   right: 17px;
   width: 18px;
   height: 14px;
@@ -572,14 +623,14 @@
     left: 6px;
   }
 
-  .user-form__control--slimming:checked + label::after {
+  .user-form__control--slimming:checked + label::before {
     width: 18px;
     height: 18px;
     top: 7px;
     left: 17px;
   }
 
-  .user-form__control--slimming:checked + label::before {
+  .user-form__control--slimming:checked + label::after{
     width: 40px;
     height: 40px;
     top: -4px;
@@ -594,14 +645,14 @@
     left: 6px;
   }
 
-  .user-form__control--upweight:checked + label::after {
+  .user-form__control--upweight:checked + label::before {
     width: 18px;
     height: 18px;
     top: 10px;
     left: 17px;
   }
 
-  .user-form__control--upweight:checked + label::before {
+  .user-form__control--upweight:checked + label::after {
     width: 40px;
     height: 40px;
     top: -1px;
@@ -616,14 +667,14 @@
     left: 6px;
   }
 
-  .user-form__control--userhelp:checked + label::after {
+  .user-form__control--userhelp:checked + label::before {
     width: 18px;
     height: 18px;
     top: 17px;
     left: 17px;
   }
 
-  .user-form__control--userhelp:checked + label::before {
+  .user-form__control--userhelp:checked + label::after {
     width: 40px;
     height: 40px;
     top: 7px;
@@ -693,12 +744,12 @@
   }
 
   .user-form__mail-icon {
-    top: 44px;
+    top: 38px;
     right: 57px;
   }
 
   .user-form__phone-icon {
-    top: 42px;
+    top: 36px;
     right: 54px;
   }
 

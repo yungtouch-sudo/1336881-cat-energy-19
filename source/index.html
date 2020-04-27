@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header container-fix">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -145,7 +150,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__container container-fix">
-      <div class="user-invite">
+      <div class="user-invite user-invite--fff">
         <p class="user-invite__text">
           приглашаем к&nbspсотрудничеству дилеров!
         </p>
@@ -165,11 +170,10 @@
       </div>
     </div>
     <div class="page-footer__backcolor">
-      <div class="page-footer__container page-footer__container-bottom container-fix">
+      <div class="page-footer__container-lower page-footer__container-bottom container-fix">
         <a href="index.html" class="page-footer__link">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
         </a>
-
         <ul class="page-footer__social social">
           <li class="social__items">
             <a aria-label="В контакте" class="social__link" href="#">
