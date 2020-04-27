@@ -72,9 +72,10 @@ min-height: 203px;
     width: 570px;
     height: 201px;
     margin: 0;
-    position: relative;
+    position: absolute;
+    top: 95px;
     padding: 0;
-    margin-bottom: 105px;
+
 
     &__text {
       padding-left: 74px;
