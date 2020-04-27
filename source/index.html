@@ -10,7 +10,7 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -161,14 +161,17 @@
           <p class="user-invite__geo user-invite__geo--sity">Санкт-Петербург</p>
         </div>
       </div>
+      </div>
       <div class="page-footer__wrap">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Санкт-Петербург, ул.Б. Конюшенная, д. 19/8">
         </picture>
+        <div class="page-footer__googlemap-wrap">
+                  <iframe class="page-footer__googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1587992155497!5m2!1sen!2sru" width="1300" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
       </div>
-    </div>
     <div class="page-footer__backcolor">
       <div class="page-footer__container-lower page-footer__container-bottom container-fix">
         <a href="index.html" class="page-footer__link">
