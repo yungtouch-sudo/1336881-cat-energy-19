@@ -10,6 +10,10 @@
   display: inline-flex;
   text-decoration: none;
 
+  &:hover .copyright__image {
+    fill: #68b738;
+  }
+
   &:active {
     opacity: 0.3;
   }
@@ -17,13 +21,8 @@
 
 .copyright__image {
   margin-left: 130px;
-
-  &:hover {
-    path {
-      fill: #68b738;
-    }
-  }
 }
+
 @media (min-width: $tablet-width) {
   .copyright__image {
     margin-left: 14px;

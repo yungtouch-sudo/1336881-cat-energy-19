@@ -2,8 +2,9 @@
   display: block;
   margin-bottom: 40px;
 }
-@media (min-width: $desktop-width){
-  .page-main{
+
+@media (min-width: $desktop-width) {
+  .page-main {
     margin-bottom: 0;
   }
 }

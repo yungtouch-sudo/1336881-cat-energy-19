@@ -1,5 +1,6 @@
 .additional {
   margin-top: 27px;
+  margin-bottom: 40px;
 }
 
 .additional__title {
@@ -61,6 +62,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-width) {
   .additional {
     margin-bottom: 74px;
@@ -83,6 +85,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .additional {
     margin-bottom: 83px;

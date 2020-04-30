@@ -38,6 +38,7 @@
   top: -1px;
   left: 3px;
 }
+
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
     display: none;
@@ -51,6 +52,7 @@
     display: block;
   }
 }
+
 @media (min-width: $tablet-width) {
   .main-nav__toggle {
     display: none;
@@ -62,6 +64,7 @@
     width: 523px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-nav {
     z-index: 1;

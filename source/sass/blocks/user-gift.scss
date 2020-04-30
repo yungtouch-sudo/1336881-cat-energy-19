@@ -5,6 +5,7 @@
   position: relative;
   margin-top: 42px;
   margin-bottom: -4px;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
     background-size: 280px;
@@ -35,6 +36,7 @@
 .user-form__fieldset {
   border: 0;
 }
+
 @media (min-width: $tablet-width) {
   .user-gift {
     background: #68b738 url("../img/gift-photo-tablet@1x.jpg") no-repeat;
@@ -43,6 +45,7 @@
     margin-top: 68px;
     margin-bottom: 0;
     position: relative;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
       background-size: 708px;
@@ -66,6 +69,7 @@
     text-align: left;
   }
 }
+
 @media (min-width: $desktop-width) {
   .user-gift {
     background: #68b738 url("../img/gift-photo-desktop@1x.jpg") no-repeat;
@@ -73,6 +77,7 @@
     height: 289px;
     margin-top: 48px;
     margin-right: 9px;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
       background-size: 246px;

@@ -47,6 +47,7 @@
   display: inline-block;
   margin-left: 20px;
   margin-bottom: 22px;
+
   &:hover {
     background-color: #5eaa2f;
   }
@@ -77,6 +78,7 @@
 .catalog-card__wrapper ul:first-child {
   margin: 0;
 }
+
 @media (min-width: $tablet-width) {
   .catalog-card {
     background-color: #f2f2f2;
@@ -142,6 +144,7 @@
     height: 208px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .catalog-card {
     width: 245px;

@@ -1,10 +1,12 @@
 .page-header {
   padding-left: 0;
-padding-right: 0;
-min-height: 65px;
-&__logo{
-  padding-left: 20px;
-}
+  padding-right: 0;
+  min-height: 65px;
+
+  &__logo {
+    padding-left: 20px;
+  }
+
   &__logo-icon {
     width: 191px;
     height: 39px;
@@ -14,6 +16,7 @@ min-height: 65px;
     padding-top: 10px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
@@ -23,10 +26,12 @@ min-height: 65px;
       width: auto;
       padding-top: 14px;
       padding-left: 30px;
-      &:hover{
+
+      &:hover {
         opacity: 0.8;
       }
-      &:active{
+
+      &:active {
         opacity: 0.6;
       }
     }
@@ -41,10 +46,10 @@ min-height: 65px;
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header__logo {
     z-index: 1;
-    padding-top: 31px;
     padding-left: 34px;
     width: auto;
     padding-top: 49px;
