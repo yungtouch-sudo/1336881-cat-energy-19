@@ -15,16 +15,7 @@
   text-transform: uppercase;
   color: #222222;
   margin-right: 11px;
-}
 
-.user-form__label--slimming,
-.user-form__label--upweight,
-.user-form__label--userhelp {
-  padding-left: 44px;
-  position: relative;
-}
-
-.user-form__label {
   &:hover::after {
     border: 1px solid #bababa;
   }
@@ -32,6 +23,13 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.user-form__label--slimming,
+.user-form__label--upweight,
+.user-form__label--userhelp {
+  padding-left: 44px;
+  position: relative;
 }
 /* input error */
 .user-form__control--slimming-error,
@@ -175,6 +173,7 @@
 
   &:focus {
     box-shadow: 0 0 0 1px #444444;
+    outline: 0;
   }
 }
 
@@ -222,6 +221,7 @@
   margin-bottom: 15px;
   width: 280px;
   border: none;
+
   &:hover {
     background-color: #5eaa2f;
   }
@@ -244,6 +244,7 @@
 }
 
 .user-form__fieldset {
+  position: relative;
   padding: 0;
 
   &-wrapper {
@@ -259,10 +260,6 @@
   border: solid 1px #ededed;
   padding-top: 14px;
   padding-bottom: 7px;
-}
-
-.user-form__fieldset {
-  position: relative;
 }
 
 .user-form__fieldset--line {
@@ -321,7 +318,6 @@
   }
 }
 /* Input error + icon color */
-
 .user-form__control--email-error {
   border: solid 1px #ff8282;
   box-shadow: 0 0 0 1px #ff8282;
@@ -454,16 +450,6 @@
   left: -1px;
 }
 
-.user-form__control--water + label::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: solid 1px #cdcdcd;
-  top: 0;
-  left: -1px;
-}
-
 .user-form__control--water:checked + label::before {
   content: "";
   position: absolute;
@@ -472,16 +458,6 @@
   background: url("../img/icon-tick.svg") no-repeat;
   top: 7px;
   left: 3px;
-}
-
-.user-form__control--milk + label::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: solid 1px #cdcdcd;
-  top: 3px;
-  left: -1px;
 }
 
 .user-form__control--milk + label::after {
@@ -514,16 +490,6 @@
   left: -1px;
 }
 
-.user-form__control--vitamins + label::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: solid 1px #cdcdcd;
-  top: 0;
-  left: -1px;
-}
-
 .user-form__control--vitamins:checked + label::before {
   content: "";
   position: absolute;
@@ -537,6 +503,7 @@
 .user-form__send-container {
   margin-top: 19px;
 }
+
 @media (min-width: $tablet-width) {
   .user-form__wrapper {
     display: flex;
@@ -566,7 +533,6 @@
   }
 
   .user-form__wrap--evidence {
-    margin-bottom: 15px;
     margin-bottom: 20px;
   }
 
@@ -630,7 +596,7 @@
     left: 17px;
   }
 
-  .user-form__control--slimming:checked + label::after{
+  .user-form__control--slimming:checked + label::after {
     width: 40px;
     height: 40px;
     top: -4px;
@@ -910,6 +876,7 @@
     padding-left: 69px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .user-form__wrapper {
     display: inline-flex;

@@ -16,6 +16,7 @@
 .main-catalog__items {
   margin-top: -14px;
 }
+
 @media (min-width: $tablet-width) {
   .main-catalog__title-wrapper {
     border: 0;
@@ -25,7 +26,4 @@
   .main-catalog__items {
     margin-top: 32px;
   }
-}
-@media (min-width: $desktop-width) {
-  .main-catalog__title {}
 }

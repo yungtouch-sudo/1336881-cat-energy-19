@@ -21,9 +21,7 @@
   height: 19px;
 
   &:hover {
-    .st0 {
-      fill: #68b738;
-    }
+    fill: #68b738;
   }
 
   &:active {
@@ -47,6 +45,7 @@
 .social li:first-child {
   padding-left: 53px;
 }
+
 @media (min-width: $tablet-width) {
   .social__image--vk {
     width: 30px;

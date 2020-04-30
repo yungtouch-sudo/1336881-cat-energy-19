@@ -9,6 +9,7 @@
   height: 305px;
   background-position: center;
   margin: 0 auto;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px;
@@ -57,6 +58,7 @@
   color: #ffffff;
   margin-bottom: 30px;
 }
+
 @media (min-width: $tablet-width) {
   .main-preview__background {
     background-image: none;
@@ -102,16 +104,18 @@
     margin-top: 18px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-preview__background {
-    background-image: url("../img/index-background-desktop@1x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+    background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
     margin-top: -139px;
     padding-top: 80px;
     height: 696px;
     background-position: left calc(50% + 360px) top 0, left 0 top 0;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-background-image: url("../img/index-background-desktop@2x.jpg"),linear-gradient(to right, #ffffff 50%, #65a93c 50%);
-      background-size: 720px 696px,100%;
+      background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 50%, #65a93c 50%);
+      background-size: 720px 696px, 100%;
     }
   }
 

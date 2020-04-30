@@ -26,6 +26,7 @@
   text-align: left;
   color: #444444;
 }
+
 @media (min-width: $tablet-width) {
   .main-example {
     background-color: #ffffff;
@@ -61,9 +62,11 @@
     margin-top: 54px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-example {
     margin-bottom: 0;
+
     &::before {
       position: absolute;
       content: "";

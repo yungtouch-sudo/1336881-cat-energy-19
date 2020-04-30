@@ -106,6 +106,7 @@
 .page-footer__logo:active {
   opacity: 0.6;
 }
+
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 38px;
@@ -182,6 +183,7 @@
     padding-top: 1px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 0;
@@ -196,7 +198,6 @@
     z-index: 1;
     position: relative;
 
-
     &::before {
       position: absolute;
       content: "";
@@ -208,12 +209,15 @@
       z-index: 1;
     }
   }
-.page-footer__googlemap-wrap{
-  top: 0;
-}
-.page-footer__googlemap{
-  height: 400px;
-}
+
+  .page-footer__googlemap-wrap {
+    top: 0;
+  }
+
+  .page-footer__googlemap {
+    height: 400px;
+  }
+
   .page-footer__container {
     position: relative;
     padding-left: 41px;

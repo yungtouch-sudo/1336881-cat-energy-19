@@ -1,16 +1,13 @@
-.catalog-list{
+.catalog-list {
   list-style: none;
   position: relative;
   padding: 0;
 }
 
-@media (min-width: $tablet-width){
-  .catalog-list{
+@media (min-width: $tablet-width) {
+  .catalog-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .catalog-list__about{
-
   }
 }

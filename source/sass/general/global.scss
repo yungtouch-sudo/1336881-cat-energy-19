@@ -39,15 +39,15 @@ img {
 
 .container-fix {
   width: 320px;
-  outline: 1px solid blue;
   padding: 0 20px;
   margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-
   }
 }
