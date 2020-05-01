@@ -83,7 +83,7 @@
   .catalog-card {
     background-color: #f2f2f2;
     margin-top: 104px;
-    max-height: 431px;
+    min-height: 431px;
     width: 325px;
     margin-bottom: 36px;
     margin-left: 0;
@@ -127,7 +127,7 @@
   .catalog-card__link {
     width: 249px;
     padding-bottom: 11px;
-    margin-bottom: 70px;
+    margin-bottom: 38px;
     margin-left: 39px;
     margin-top: 32px;
   }

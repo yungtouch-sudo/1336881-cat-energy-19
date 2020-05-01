@@ -66,6 +66,10 @@
 @media (min-width: $tablet-width) {
   .additional {
     margin-bottom: 74px;
+
+    &__wrapper:first-child {
+      border-top: 0;
+    }
   }
 
   .additional__title {

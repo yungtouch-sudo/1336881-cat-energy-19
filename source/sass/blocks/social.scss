@@ -3,7 +3,7 @@
   padding-left: 37px;
 }
 
-.social__image--vk {
+.social__image-vk {
   width: 22px;
   height: 12px;
 
@@ -16,7 +16,7 @@
   }
 }
 
-.social__image--insta {
+.social__image-insta {
   width: 17px;
   height: 19px;
 
@@ -29,7 +29,7 @@
   }
 }
 
-.social__image--fb {
+.social__image-fb {
   width: 10px;
   height: 19px;
 
@@ -47,21 +47,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__image--vk {
+  .social__image-vk {
     width: 30px;
     height: 16px;
     padding: 0;
     margin: 0;
   }
 
-  .social__image--insta {
+  .social__image-insta {
     width: 23px;
     height: 23px;
     padding: 0;
     margin: 0;
   }
 
-  .social__image--fb {
+  .social__image-fb {
     width: 14px;
     height: 28px;
     padding: 0;

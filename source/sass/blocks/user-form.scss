@@ -7,6 +7,11 @@
   padding-right: 0;
 }
 
+.user-form__control:focus + label::after {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 .user-form__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -32,6 +37,7 @@
   position: relative;
 }
 /* input error */
+
 .user-form__control--slimming-error,
 .user-form__control--upweight-error,
 .user-form__control--userhelp-error {
@@ -246,6 +252,7 @@
 .user-form__fieldset {
   position: relative;
   padding: 0;
+  border: 0;
 
   &-wrapper {
     padding-left: 20px;
@@ -274,7 +281,7 @@
   }
 }
 
-.user-form__fieldset--line-1::before {
+.user-form__wrap--line-1::before {
   top: 42px;
   z-index: -1;
   width: 100%;
@@ -284,7 +291,7 @@
   content: "";
 }
 
-.user-form__fieldset--line-label {
+.user-form__wrap--line-label {
   &::before {
     top: 15px;
     z-index: -1;
@@ -318,6 +325,7 @@
   }
 }
 /* Input error + icon color */
+
 .user-form__control--email-error {
   border: solid 1px #ff8282;
   box-shadow: 0 0 0 1px #ff8282;
@@ -507,6 +515,7 @@
 @media (min-width: $tablet-width) {
   .user-form__wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .user-form__label {
@@ -553,7 +562,7 @@
     padding-bottom: 26px;
   }
 
-  .user-form__fieldset--line-1::before {
+  .user-form__wrap--line-1::before {
     top: 93px;
   }
 
@@ -725,7 +734,7 @@
     padding-left: 37px;
   }
 
-  .user-form__fieldset--line-label {
+  .user-form__wrap--line-label {
     margin-top: 43px;
 
     &::before {
@@ -905,13 +914,16 @@
 
   .user-form__fieldset-wrapper--2 {
     width: 570px;
-    height: 196px;
+
     margin-left: 77px;
     margin-right: 0;
+    margin-bottom: 22px;
     margin-top: 45px;
+    min-height: 196px;
+    padding-bottom: 0;
   }
 
-  .user-form__fieldset--line-1::before {
+  .user-form__wrap--line-1::before {
     top: 64px;
   }
 
@@ -986,11 +998,11 @@
     right: 30px;
   }
 
-  .user-form__fieldset--line-label {
+  .user-form__wrap--line-label {
     margin-top: 41px;
   }
 
-  .user-form__fieldset--line-label::before {
+  .user-form__wrap--line-label::before {
     top: 64px;
   }
 

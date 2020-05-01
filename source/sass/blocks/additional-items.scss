@@ -68,7 +68,7 @@
     border: 1px solid rgba(205, 205, 205, 0.5);
     border-bottom: none;
     width: 708px;
-    height: 140px;
+    min-height: 140px;
   }
 
   .additional__wrapper div:last-child {
@@ -125,7 +125,7 @@
     align-items: center;
     justify-content: space-between;
     width: 895px;
-    height: 69px;
+    min-height: 69px;
     border-left: 0;
     border-right: 0;
     margin-bottom: 4px;
@@ -134,29 +134,33 @@
       width: 245px;
       padding: 9px 0 10px;
       margin-left: 39px;
-      margin-top: 20px;
-      margin-bottom: 18px;
+      margin-top: 12px;
+      margin-bottom: 12px;
     }
 
     &__unit {
+      width: 180px;
       padding-left: 0;
       padding-top: 9px;
     }
 
     &__stats tr {
       width: 285px;
+      justify-content: flex-start;
     }
 
     &__property {
       padding-right: 0;
       padding-left: 0;
-      text-align: right;
+      width: 180px;
+      text-align: left;
     }
 
     &__value {
       padding-right: 0;
-      padding-left: 0;
-      text-align: right;
+      text-align: left;
+      width: 120px;
+      padding-left: 73px;
     }
 
     &__stats {

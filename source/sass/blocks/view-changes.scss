@@ -1,4 +1,4 @@
-.view-changes {
+.view-changes__wrapper {
   width: 84px;
   height: 14px;
   padding: 0 6px;
@@ -17,9 +17,10 @@
   height: 6px;
   background-color: #68b738;
   border-radius: 3px;
+  outline: 0;
 }
 
-.view-changes__wrapper {
+.view-changes {
   display: flex;
   margin-top: 33px;
 }
@@ -30,6 +31,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: 0;
 
   &__before {
     padding-left: 43px;
@@ -69,11 +71,11 @@
     }
 
     &:active {
-      border: 0;
+      border-bottom: 1px solid rgba(205, 205, 205, 0);
     }
   }
 
-  .view-changes {
+  .view-changes__wrapper {
     width: 428px;
     height: 7px;
     background-color: #dcdcdc;
@@ -94,11 +96,11 @@
     }
   }
 
-  .view-changes:hover::after {
+  .view-changes__wrapper:hover::after {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .view-changes:active::after {
+  .view-changes__wrapper:active::after {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     border: solid 2px #68b738;
   }
@@ -110,24 +112,29 @@
     border-radius: 50%;
     width: 8px;
     height: 8px;
-    top: -2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    top: -1px;
     left: 210px;
+    border: 0;
     z-index: 1;
   }
 
-  .view-changes__wrapper {
+  .view-changes {
     margin-top: 17px;
     padding-left: 92px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .view-changes__wrapper {
+  .view-changes {
     padding-left: 178px;
     margin-top: -159px;
   }
 
-  .view-changes {
+  .view-changes__wrapper {
     margin-top: 13px;
   }
 

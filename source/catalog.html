@@ -19,7 +19,7 @@
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="in-htmlacademy" viewBox="0 0 60 60">
-        <path fill="#666666"
+        <path
           d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
       </symbol>
       <symbol id="in-icon-fb" viewBox="0 0 10 19">
@@ -78,7 +78,7 @@
               <a class="site-list__link site-list__link--deskcolor" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__item--current site-list__link--deskcolor">Каталог продукции</a>
+              <a class="site-list__link site-list__link--current site-list__link--deskcolor">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--deskcolor" href="form.html">Подбор программы</a>
@@ -98,14 +98,16 @@
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--500">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-                  <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                    <img src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -139,19 +141,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--1000">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-                  <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                    <img src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -185,19 +189,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--500">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-                  <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                    <img src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -231,19 +237,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--1000">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-                  <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+                    <img src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -277,19 +285,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--500">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-                  <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+                    <img src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -323,19 +333,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--1000">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-                  <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                    <img src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -369,19 +381,21 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li class="catalog-list__about catalog-card">
             <div class="catalog-card__wrapper">
               <div class="catalog-card__img catalog-card__img--500">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-                  <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Изображение товара" />
-                </picture>
+                <a class="catalog-card__img-link" href="product.html">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+                    <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                    <img src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Изображение товара" />
+                  </picture>
+                </a>
               </div>
               <div>
                 <p class="catalog-card__title">
@@ -415,7 +429,7 @@
                 </table>
               </div>
             </div>
-            <a class="catalog-card__link" href="#">Заказать</a>
+            <a class="catalog-card__link" href="order.html">Заказать</a>
           </li>
           <li>
             <div class="catalog-full catalog-full--decoration">
@@ -453,7 +467,7 @@
                 </tr>
               </table>
             </div>
-            <a class="additional-items__link" href="#">Заказать</a>
+            <a class="additional-items__link" href="order.html">Заказать</a>
           </div>
           <div class="additional-items">
             <div class="additional-items__pack">
@@ -471,7 +485,7 @@
                 </tr>
               </table>
             </div>
-            <a class="additional-items__link" href="#">Заказать</a>
+            <a class="additional-items__link" href="order.html">Заказать</a>
           </div>
           <div class="additional-items">
             <div class="additional-items__pack">
@@ -489,7 +503,7 @@
                 </tr>
               </table>
             </div>
-            <a class="additional-items__link" href="#">Заказать</a>
+            <a class="additional-items__link" href="order.html">Заказать</a>
           </div>
           <div class="additional-items">
             <div class="additional-items__pack">
@@ -507,7 +521,7 @@
                 </tr>
               </table>
             </div>
-            <a class="additional-items__link" href="#">Заказать</a>
+            <a class="additional-items__link" href="order.html">Заказать</a>
           </div>
         </div>
         <div class=" user-gift">
@@ -549,27 +563,27 @@
     </div>
     <div class="page-footer__backcolor">
       <div class="page-footer__container-lower page-footer__container-bottom container-fix">
-        <a href="index.html" class="page-footer__link">
+        <a href="#" class="page-footer__link">
           <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт энерджи" />
         </a>
         <ul class="page-footer__social social">
           <li class="social__items">
             <a aria-label="В контакте" class="social__link" href="#">
-              <svg class="social__image--vk" width="30" height="16" fill="#666666">
+              <svg class="social__image-vk" width="30" height="16" fill="#666666">
                 <use xlink:href="#in-icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Инстаграмм" class="social__link" href="#">
-              <svg class="social__image--insta" fill="#666666" width="23" height="23">
+              <svg class="social__image-insta" fill="#666666" width="23" height="23">
                 <use xlink:href="#in-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__items">
             <a aria-label="Фейсбук" class="social__link" href="#">
-              <svg class="social__image--fb" width="14" height="28" fill="#666666">
+              <svg class="social__image-fb" width="14" height="28" fill="#666666">
                 <use xlink:href="#in-icon-fb"></use>
               </svg>
             </a>
